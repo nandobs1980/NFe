@@ -1,0 +1,225 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2F52D4D-53B8-94ED-AF7E-DA25A9539F75" name="TNFe_infNFe_det_imposto_IPI">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:02:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="725D3F27-064A-C596-97B2-013338EF89F9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E6073C4-1785-B176-707B-751906BC3335" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="E46F4B58-4205-CF8D-FD18-66B443B439B8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E6073C4-1785-B176-707B-751906BC3335" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="nItem" id="0E00DA2F-0ACE-6CA7-BEE0-13CEAC5FDF3B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:26:37 UTC</createdTime>
+<commentInRDBMS>Número do item do NF</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clEnq" id="EBFA6D4D-8A24-0F0D-0EDE-615D2BEF6F46">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:04:05 UTC</createdTime>
+<commentInRDBMS>Classe de Enquadramento do IPI para Cigarros e Bebidas</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNPJProd" id="B43FB0BA-FF84-63F3-75A9-4243F9659D85">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:04:34 UTC</createdTime>
+<commentInRDBMS>CNPJ do produtor da mercadoria, quando diferente do emitente. Somente para os casos de exportação direta ou indireta.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cSelo" id="982B036F-0B74-C579-C432-5FF9FA86C0CD">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:05:21 UTC</createdTime>
+<commentInRDBMS>Código do selo de controle do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qSelo" id="2548EB66-E4E9-80F1-23EB-232F52083473">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:06:03 UTC</createdTime>
+<commentInRDBMS>Quantidade de selo de controle do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cEnq" id="E69C8A3F-3B6B-DEE7-F55D-62DC922122E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:06:26 UTC</createdTime>
+<commentInRDBMS>Código de Enquadramento Legal do IPI (tabela a ser criada pela RFB)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CST" id="FA801782-1AA3-2DDA-1A4E-F6EC07313FC5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:09:18 UTC</createdTime>
+<commentInRDBMS>Código da Situação Tributária do IPI:&lt;br/&gt;00-Entrada com recuperação de crédito&lt;br/&gt;49 - Outras entradas&lt;br/&gt;50-Saída tributada&lt;br/&gt;99-Outras saídas</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vBC" id="C9C8BDAD-9E45-CF4D-B162-70E4D603F4C1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:09:53 UTC</createdTime>
+<commentInRDBMS>Valor da BC do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pIPI" id="FCD89D91-B46A-2597-1168-5F05DEC46455">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:10:22 UTC</createdTime>
+<commentInRDBMS>Alíquota do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,7,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qUnid" id="ADAFD42F-F126-DE09-AE78-347D655F7AE8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:11:11 UTC</createdTime>
+<commentInRDBMS>Quantidade total na unidade padrão para tributação</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,16,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vUnid" id="E001D7FA-621A-4CB6-F3C7-F45FE6FF3370">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:11:57 UTC</createdTime>
+<commentInRDBMS>Valor por Unidade Tributável. Informar o valor do imposto Pauta por unidade de medida.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>4</dataTypeScale>
+<ownDataTypeParameters>,15,4</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vIPI" id="690163F3-EFF0-E302-3854-CD1967AAA00F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:12:54 UTC</createdTime>
+<commentInRDBMS>Valor do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DE828A34-963A-90A1-25FB-07005CB57C3A" name="TNFe_infNFe_det_imposto_IPI_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="725D3F27-064A-C596-97B2-013338EF89F9"/>
+<colUsage columnID="E46F4B58-4205-CF8D-FD18-66B443B439B8"/>
+<colUsage columnID="0E00DA2F-0ACE-6CA7-BEE0-13CEAC5FDF3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D62961E-B517-CF55-A523-2D5CE4B19334" name="TNFe_infNFe_det_imposto_IPI_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="725D3F27-064A-C596-97B2-013338EF89F9"/>
+<colUsage columnID="E46F4B58-4205-CF8D-FD18-66B443B439B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

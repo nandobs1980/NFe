@@ -1,0 +1,1660 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.StorageDesignSqlServerv2k12" name="SQL Server 2012" id="50FED073-E6B9-1185-F2AC-D87CAF7A798D" siteID="980FCE9E-D688-BDF0-C89A-C9FB2DCAED45" siteName="SQL Server 2012" siteType="13">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+<dtdialogVisible>false</dtdialogVisible>
+<imported>false</imported>
+<DataBasesSqlServer>
+<DataBaseSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.DataBaseSqlServerv2k12" name="[None]" directorySegmentName="seg_0" id="DB_NULLELEMENT">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-12 21:04:41 UTC</createdTime>
+<comment>No value</comment>
+<ownerDesignName>SSouza</ownerDesignName>
+<nullInstance>true</nullInstance>
+</DataBaseSqlServer>
+<DataBaseSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.DataBaseSqlServerv2k12" name="NFe" directorySegmentName="seg_0" id="7A263922-30E5-083D-BD19-7E17C1DDC0F9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ansiPadding>ON</ansiPadding>
+<ansiWarnings>ON</ansiWarnings>
+<arithabort>ON</arithabort>
+<concatNullYieldsNull>ON</concatNullYieldsNull>
+<numericRoundabort>ON</numericRoundabort>
+<recursiveTriggers>ON</recursiveTriggers>
+<fileGroups>
+<FileGroup class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FileGroupSqlServerv2k5" name="PRIMARY" id="D001CD9C-7705-E3F0-C916-3E88EBAB6847">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="DB1_Data.MDF" id="83489653-E9CB-3D7E-0CDD-0525C938E846">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<fileName>c:\program files\microsoft sql server\mssql\data\DB1_Data.MDF</fileName>
+</DataFile>
+</dataFiles>
+</FileGroup>
+</fileGroups>
+</DataBaseSqlServer>
+</DataBasesSqlServer>
+<LoginsSqlServer>
+<LoginSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.LoginSqlServerv2k5" name="GUEST" directorySegmentName="seg_0" id="GUEST">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-12 21:04:41 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+<nullInstance>true</nullInstance>
+</LoginSqlServer>
+</LoginsSqlServer>
+<UsersSqlServer>
+<UserSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.UserSqlServerv2k12" directorySegmentName="seg_0" id="DB_NULLELEMENT_dbo" name="dbo">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>DB_NULLELEMENT</database>
+</UserSqlServer>
+<UserSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.UserSqlServerv2k12" directorySegmentName="seg_0" id="7A263922-30E5-083D-BD19-7E17C1DDC0F9_dbo" name="dbo">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>7A263922-30E5-083D-BD19-7E17C1DDC0F9</database>
+</UserSqlServer>
+</UsersSqlServer>
+<RolesSqlServer>
+<RoleSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.RoleSqlServerv2k12" directorySegmentName="seg_0" id="DB_NULLELEMENT_PUBLIC" name="PUBLIC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>DB_NULLELEMENT</database>
+</RoleSqlServer>
+<RoleSqlServer class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.RoleSqlServerv2k12" directorySegmentName="seg_0" id="7A263922-30E5-083D-BD19-7E17C1DDC0F9_PUBLIC" name="PUBLIC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>7A263922-30E5-083D-BD19-7E17C1DDC0F9</database>
+</RoleSqlServer>
+</RolesSqlServer>
+<SqlServerTables>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS" directorySegmentName="seg_0" id="2CF7978D-A7B6-A580-95A2-3719F91D7DFE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:20 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="079A60E7-324C-3614-C46A-B0A099F95ADA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:07:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="1B1FE175-7503-1FA4-63AF-5C3E20C53350">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="9101688A-AC54-4629-DAFF-571582929461">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS_TSS_Arquivo_FK" id="4F9D286E-E7D2-E0F0-2D8F-E942EA4854AA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS_PK" id="2764F377-8D18-C9B4-6771-CBA34F41E113">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:07:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_total_ICMSTot" directorySegmentName="seg_0" id="3095AF5D-E79D-D741-1399-B483A5A4D97A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:36:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFCP" id="0B7B15E9-34EA-86C8-6FC7-2DB390083EB5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:40:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vCOFINS" id="31E6C6CA-B44C-2ED4-5536-64BBB1ED7942">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:08 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vIPI" id="3D582A3F-BA6B-B07D-9961-0DC49F96356D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vBC" id="40F891A0-69DB-A0D6-FF2E-32B8D8BADA97">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:37:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vII" id="45D36B4B-D96E-E9F9-FEBB-4DEDFFEC28F5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:33 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="5B8EAD49-6A65-327F-B602-55861D69B96E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vIPIDevol" id="60234609-D22E-DFA5-F95C-75D259E994E3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:45:17 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vDesc" id="6D55078C-C308-D148-808A-146333F4D697">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:12 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vICMSDeson" id="6F406CEC-319D-F7D9-5B1C-3C3B222D3677">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:38:54 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFCPUFDest" id="755DD477-DCA1-F7C8-C87B-C99788C451F7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:39:25 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vST" id="809DED69-8088-A769-C8A1-57BE86BD8F96">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:41:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vTotTrib" id="81CD88F0-B9A0-37FC-2895-A4E130E469A1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:47:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="861DBBBD-1A55-0257-419B-D286FCD976D6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFCPSTRet" id="94777AD7-E1E5-45A5-AC94-C90D90B1F166">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFrete" id="9FD7D243-89CB-E46D-E2BC-6970EF522B78">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:43:17 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFCPST" id="A1F959E1-6DA9-9BBA-90A4-34CCC3B5B436">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vPIS" id="A23C2F61-2C33-AAAF-040F-ABB856B29DB5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:45:48 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vICMS" id="BAB4EAC5-1364-60FC-BD26-D7F7FDF8FABA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:38:30 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vICMSUFDest" id="BDD1651B-9CC0-B6E9-FFB6-91FA7229E67D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:39:53 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vSeg" id="CD76B82C-7CC2-3F02-056E-06C9051A62B2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:43:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="D1F4697F-F3A5-2CEA-32A2-8875D3C4CA37">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:48:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vOutro" id="DE004070-15AD-E88A-5291-0F7604C8450F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:37 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vProd" id="E0B85265-3B45-0D0E-4D0C-8E9A826F405E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vBCST" id="EA029EE9-9C8A-8B23-7A97-0787364C1CB6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:41:07 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vNF" id="F51F0313-46CC-99D6-F609-FA89FDC2DFA3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vICMSUFRemet" id="FBE3B93C-A253-5006-56B2-344DBD5E849A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:40:21 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_total_ICMSTot_TSS_Arquivo_FK" id="621AD81C-60D3-E9BF-6F00-F7D85B1EACB8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_total_ICMSTot_PK" id="E5C369B6-4024-259B-63D3-47BB3A1FC0E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TSS_Arquivo" directorySegmentName="seg_0" id="545013D0-D79B-E72B-B13D-E5A15B4D130C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="0180DAAE-F26B-5C92-953A-FF400B838962">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Modificacao" id="0C6CCB81-7B92-49DE-EBA9-C2A14F233318">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="367D8268-73DA-65E7-062B-7BF17FAFD8AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="424A516A-0A1A-28A8-07B0-B106F1EA5918">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="pathXML" id="7F387AFF-5114-92B3-CAB3-05C9CE5CF469">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Criacao" id="941962B5-39FB-E59B-5969-FF42CB2C90D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Tamanho" id="A69C5701-42A4-599C-5CFB-88ED7629F6FF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="FileNameXML" id="C0F5E1F4-12E1-3666-1981-78894F975595">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="XML_Arquivo" id="D2034A2C-3EC2-24FE-0D0F-E36589FE81D9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Utimo_Acesso" id="E115AAC2-9683-7C9E-003B-7ADB139A8C22">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TSS_Arquivos_TSS_Empresa_FK" id="C87698C1-4DF3-0968-AD11-5F4CB53E31FF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TSS_Arquivos_PK" id="38E00ADC-7C16-E06D-04D2-AF7EAC9EB696">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_avulsa" directorySegmentName="seg_0" id="63AA42CB-22FB-B513-3941-A4389B03C89D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CNPJ" id="1E7365D7-4A9F-C41A-9B16-2ECDB229FE2F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="matr" id="2BC1C15F-AF64-A15E-3676-0D548BB4DD5B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xOrgao" id="3DA95870-9E88-0D9E-F698-34C9B70FE2A3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="58459E42-31E5-75EB-F5AF-B22B76C66E37">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:21:57 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="592AA1C9-AB05-0520-0C36-4524E937E19C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:21:57 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dEmi" id="5A63B5D7-98C9-40C1-F1FC-85A68E61E803">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UF" id="902DDA98-31DB-FE54-C779-CD46630A5CF8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_inclusao" id="9B4A8AF3-06FD-5A96-FB52-A8CA2C7743AA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dPag" id="A788880D-7EA7-7A2C-0EDE-1C9F528EAA49">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="repEmi" id="CC4D83B3-35E0-C483-4B6F-71A3B16B6811">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="fone" id="CF7AED77-083F-AEC2-CFDF-D0E4E24ABAD2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vDAR" id="D306BA78-6E94-DF85-A8AB-8AA3D4FB3A5F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nDAR" id="D92DB837-01F9-D4F7-A4F9-EEEF550FA478">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xAgente" id="F555F7D4-1512-A224-3F44-935A26863A41">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_avulsa_TSS_Arquivo_FK" id="CC66F2C3-C437-0C56-9E80-A0F9AD422514">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:21:57 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_avulsa_PK" id="E1FBEE06-1987-222F-EE41-16EA32109F65">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:22:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_retirada_entrega" directorySegmentName="seg_0" id="680DFF21-75FF-5319-2ED7-4E575F8561BC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:37:47 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nro" id="01950645-2B9B-FAEE-04D1-1EB537FC3859">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:44:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UF" id="07CC8A80-462E-8793-1DC5-412A898C74C5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:04:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="2B24C1F1-DE1F-F937-CFAF-D898A8C2B394">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:20:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="4EDAFABA-23BA-3C77-3C8E-DDF0A6EDCA85">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:20:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xMun" id="543D6F3A-4D62-A7D4-EC5F-70BA03EC1834">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:52:10 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xCpl" id="5C79B362-4144-377B-2F68-0BD78675476B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:44:42 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cMun" id="9DD2450C-9438-3019-5E6A-2FF5FF941169">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:47:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="AD55AF00-FFB4-9190-4E47-2903B3128771">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:05:00 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Retirada_Entrega" id="B8D4BC31-C14D-4244-CB65-4026E53CF4EE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:42:25 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xLgr" id="C40F17F9-0CF3-6AD7-6613-B6B4877F2C48">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:43:41 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Doc" id="EF3AA321-CF85-A410-3079-DAF4E998BAEA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:43:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xBairro" id="FBE1DD7E-F924-BC02-B77B-CDB635F243A4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:46:12 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_retirada_entrega_TSS_Arquivo_FK" id="9EBEFE52-A5A0-2AF7-B7EA-6C3FE48E1BF3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:20:34 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_retirada_entrega_PK" id="CA9AA3F5-4776-8B81-EBAF-C12DE680642D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:21:19 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_ide" directorySegmentName="seg_0" id="7A6DC50E-438C-937A-D5B7-A06D067928D1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cUF" id="06B3BD04-A71F-A53F-D6B1-904D5A7BCD38">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="233FEA51-FFD4-1978-E842-85DD185C4F0B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="finNFe" id="253BD0C5-DC43-4742-B300-C4D68C129C6B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="267DBE22-4077-A984-749C-8A0DFEABBFEF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cDV" id="27F91B2C-A117-9793-4EC4-5F68FA5D5CD4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="serie" id="300C8C71-9481-940D-148C-954DEB168153">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_inclusao" id="37FE058F-BD75-4840-92F3-340F1EA03001">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpAmb" id="3B3AFBB1-66B4-F888-C27B-D0A10A65C42D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="procEmi" id="422669B6-A61C-FADA-668B-771CA967D7DF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="indFinal" id="532388AF-2694-15D5-0FAD-D3041B4D018D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dhEmi" id="6503B2E5-DDF0-E170-576C-F3E93159C9A5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="natOp" id="6A5BFA05-6B84-FF1D-6962-8A2A09A0572B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nNF" id="6AB9105D-1EAB-3FF5-71BB-17E4EE992346">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpImp" id="765BB150-8C08-BB9C-3224-C010802E0C49">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="indPres" id="8E7C4E26-9ABC-19F7-9898-6D7351CFBE7E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xJust" id="9724D1E4-FC0E-F2EF-030E-2CC9A80034EE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_NFe" id="A17BFA3C-F36E-F706-33FE-04441F82EB7B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:00:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="mod" id="BC9D5618-8CBD-3B9D-8B26-75558754191E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="idDest" id="C4324FA0-FA20-4D0A-CCD5-D26FA306ABC2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cMunFG" id="C607A213-C410-122C-A847-9A4767DBE872">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpNF" id="C757445C-85EC-79F7-4430-BFBFC3F340E2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="verProc" id="C98E9FDB-56D0-5BB5-CDB5-96E406BA6FD7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dhSaiEnt" id="DDE6845D-E511-7650-5E5D-E58E6329BB2C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cNF" id="DE76AE1B-E104-070A-1655-2BD95D34CAA6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpEmis" id="E49BC6AB-21DA-22BA-3B81-1CC635EE561F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dhCont" id="E54E6E53-DAF6-E625-53DA-05F134F09180">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_ide_TSS_Arquivo_FK" id="258C1932-3A47-8A0B-5CDB-A2D822797014">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_ide_PK" id="11FD1C2F-E2C2-785E-D53C-A51C11B01F16">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:15:22 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_prod_detExport" directorySegmentName="seg_0" id="854B83C4-9454-C77A-9EE7-035BA94153C5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:59:19 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nRE" id="07841DBB-5CAE-D86B-F09A-F393DB294647">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:01:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="49A2C123-A9A8-A5C0-DF6A-22C8985C48E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:49:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="chNFe" id="678FE8EB-21AD-ED45-E7CB-3EE4169816AE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:03:07 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="8A4A2208-D9A4-99E6-E73A-1D17FDCDA185">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nDraw" id="9FEFE1A8-D5CE-C7C4-9951-C1E75B0A49AB">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:00:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="B351D3D9-BB9D-51B4-1398-46E06B3639FD">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qExport" id="E6E116E9-D25D-BE7D-7E9A-0A2EC5EA372C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:03:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_detExport_TNFe_infNFe_det_prod_FK" id="BB433A70-3398-F512-91C0-DBF3DD3F8D28">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:42:15 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_detExport_PK" id="8867E806-FE69-D7AD-45A9-B96877A812EE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:50:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_prod" directorySegmentName="seg_0" id="8B6AC822-5F01-B171-D4B1-00AAF4B98807">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:11:23 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vProd" id="0279443C-DA20-90BC-9B64-9B656E917E1A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:27:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qCom" id="0A589100-3C80-AE98-D2FB-03C7B2DFD1E2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:25:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="1D36218E-96A0-8A98-F00C-128DBE94D6C5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:24:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vOutro" id="1D3C243C-8CC5-AD9C-0028-F2CFF5C9E53F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:32:54 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vUnCom" id="20CFBE87-FC25-AE65-26D0-26E3F9A6FF7B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:26:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="indTot" id="2358286B-81E1-28EE-AA48-CE799898BE19">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:34:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="NCM" id="26D3B56B-7F99-0984-6DEC-E59F897927C0">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:16:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CNPJFab" id="2995DC61-0EB7-1CC0-E2CD-D9A6FA6F77B8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:21:12 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CEST" id="36ED96C3-C617-2D68-1746-AEF1326ED590">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:19:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="EXTIPI" id="3FA2C776-A053-424E-78DC-3B24FACFF404">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:23:09 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qTrib" id="402B609B-2A0C-DEF2-ED88-9FC36089A3E5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:30:00 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItemPed" id="47814379-AA6B-1A93-579C-775511E6050B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:06:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="uTrib" id="4CB44F79-55F7-E27E-344A-D4DF20FAF5E9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:29:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cProd" id="53E3FCAD-CCBD-5018-87D3-CACF82B5BF0B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:11:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="59748DDC-7B0D-487B-4BBD-29594A5DA37E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:49:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vUnTrib" id="5A6B725B-7E3F-B658-E334-04F37695234A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:30:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vDesc" id="6CEEED4B-C380-D625-789A-6DEFD3186B9E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:32:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="NVE" id="6E855693-1C47-E792-6B66-35DD22A8A11E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:17:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFrete" id="754B02FE-AC2E-24E1-ED43-BCDE9E026C08">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:31:19 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cEANTrib" id="80AB72B4-47D4-F158-1F5F-46472A703CA7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:28:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="indEscala" id="9F69B755-5F58-26C9-D067-511C3C5DDF23">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:19:50 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xProd" id="A173EAD9-2F3A-6BCD-FE63-68BDD0D5E69B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:15:24 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="AEE7C7CF-3C44-E64F-8C96-3F50A0918B3D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:55:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="C5D5503E-DE46-700D-B6EC-B563EF9D84BF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:24:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xPed" id="D53C11C6-73CC-F4C0-4FCF-44B47B1DBCFF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:05:53 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="uCom" id="DC993214-78EB-BF98-CAAD-9744A652D171">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:24:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vSeg" id="E2DF74FD-020C-DE7C-44EE-A4A43FBE0786">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:32:09 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nFCI" id="E4A59994-742B-C8A9-4D9B-348044958886">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:08:27 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cEAN" id="ECCCAA1E-155B-7BC9-C533-F3B20B6EE8C3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:12:52 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cBenef" id="F57164C3-D1B4-7575-5862-51570C9FDD03">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:22:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CFOP" id="F9348839-75EA-E103-E395-E6EA39CEE80D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:23:56 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_TSS_Arquivo_FK" id="3DC33232-C8DF-27C2-E43A-802C48AC6B10">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:24:45 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_PK" id="CFCCAA48-D0A9-8317-7770-B193CC97D803">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:40:59 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ICMS" directorySegmentName="seg_0" id="92FBDED5-3817-6288-A1CB-5E6488909C16">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:39:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vBC" id="037EB3EB-B5BA-08AF-2FBF-2A3B1F1501C4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:50:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vICMS" id="2F47474C-21FF-8F77-3853-31CF74E7CA34">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:52:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="4CDA376E-4254-6F41-E9F0-0D66CC7C1A1B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:26:33 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CST" id="6E56B6A5-D05D-F9B0-527B-B5EE3457A778">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:48:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="807CA5F5-4C96-EA68-FC54-3170C9133E12">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:26:33 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vFCP" id="949E00FB-5A83-A142-4233-5EA1386DD4DC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:55:52 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="pFCP" id="99C1B4AC-B6BB-A0CF-12C5-AAB0CDE90994">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:55:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="A36CDE81-5254-B481-09F4-D84C8976FDED">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:56:23 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="modBC" id="B33A7A8E-CCD8-2C76-C55F-FF56323DAF0C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:49:59 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="C2B0B3D1-5C5F-CCE9-428B-70EE772EFAEB">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:29:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="orig" id="C79CA093-4629-1A0D-0018-9E5BD4A1B904">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:43:54 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="pICMS" id="D401089A-DAE9-AC78-86D5-35169C40B63E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:51:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Tp_ICMS" id="ECB07FF8-611B-FC3E-3F30-513D241F80EC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:41:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ICMS_TSS_Arquivo_FK" id="C2088C0C-D36E-75A7-8B1F-CCB55F295A25">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:26:33 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ICMS_PK" id="8E5AAB94-102C-C0DF-3D4A-69A0A16A6179">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:27:04 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TSS_Empresa" directorySegmentName="seg_0" id="9742C1B6-52EA-140A-23B3-97542437A04C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Nm_Empresa" id="3A20B1EF-EF6E-840E-D1E6-9AEF0DA54B7D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="5FAD4215-8330-855F-CFFB-49DEDD482320">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Doc_Empresa" id="65378DB7-EDC3-D6AE-3F29-DBC0F8156795">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Endereco_Empresa" id="CDACA2E2-6028-CD1E-42FB-3A008FB72EC8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="F1B20436-51F4-BA4D-8A09-39F76A1648C7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TSS_Empresa_PK" id="F2714BC2-F462-CDFF-05CB-6EE6D09EB09F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ISSQN" directorySegmentName="seg_0" id="994343F3-3E61-0D39-769C-75C81528A047">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="02D5E9B9-A034-643C-14E1-3053D5BEC658">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:58:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="TSS_Arquivo_Id_Empresa" id="31B2B9A8-EE57-7BB4-323E-668CF0C9F223">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="4FEEE01E-406C-2992-49E9-BEC3608490CA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ISSQN_TSS_Arquivo_FK" id="4D86DD84-EA50-3E98-52D4-72A6333E0BAC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_ISSQN_PK" id="E444122A-E7A6-D606-C7E2-33C13DB419AE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:58:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_prod_DI" directorySegmentName="seg_0" id="A76C6110-5A42-837F-4A8A-86659EFF91F3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:53:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UFDesemb" id="160E3481-E410-41E6-6FC7-34FD082870AB">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:37:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UFTerceiro" id="446889DF-DE69-2003-05C8-5B48ABF8BEE2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:42:24 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpIntermedio" id="5081BD1E-BAD1-9AE6-B62F-0F0ED5ACD010">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:41:24 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CNPJ" id="5F7F5D57-9946-99B0-9783-51A264356B87">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:41:41 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nAdicao" id="7C5DAC8E-CB7D-D113-386C-472F0F9C5E26">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:43:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xLocDesemb" id="7EA1C1F0-D226-FD00-EC3F-208375F9B60E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:36:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="tpViaTransp" id="7F78F331-DDF1-7AB6-CF39-030D7E218FEC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:39:07 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="8B416EC4-6239-7F29-F311-43E0C3835D64">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dDesemb" id="8B6FD414-F2AB-2868-0ED7-351051DBD369">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:37:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="95BCB5D4-66F4-4866-1FA9-23BF5D196B36">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nDI" id="ACB1AD63-89CD-20ED-A1B2-3CE3E716EE71">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:35:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vAFRMM" id="B300FAFC-9B7F-5A8F-D792-82726962695E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:40:20 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nDraw" id="C728E5B7-CCB8-98F3-A29A-DC0924846F35">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:46:30 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cExportador" id="E5A3E31F-BBF2-9022-2A60-37260591A5F4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:43:01 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dDI" id="EE0172D5-1BC9-3BDF-7BD5-11DD6111EEEA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:35:43 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vDescDI" id="EFCFCDF1-155C-7123-9C7D-730B163AE3D3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:45:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="F2732093-8A15-B6F2-6E53-11CB16784119">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:49:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nSeqAdic" id="F2B4F9BC-A14E-893B-97F2-4B784EECBEFA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:44:24 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cFabricante" id="F8558A3F-BCA9-35F2-8FBC-2D97C28E301A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:45:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_DI_TNFe_infNFe_det_prod_FK" id="10F0F598-258F-E7A7-E854-62AE75AB1109">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:41:13 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_DI_PK" id="AAA83566-82DF-4B4A-D42C-158DB33A85D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:51:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_PIS" directorySegmentName="seg_0" id="AB3D8DF9-4E2A-DD8A-2318-AB55C257B02B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:03:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="12BEC362-EC08-FFF6-24D1-04DAB708ECF2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:04:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="D6AFEC3F-82B7-CDA6-C959-A2ECF87FE134">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:05:25 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="F2D281ED-A59D-6F42-5E23-B0E935011F66">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:04:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_PIS_TSS_Arquivo_FK" id="C28D0ED0-D3FC-19BD-D092-8DBBDB760E1E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:04:02 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_PIS_PK" id="B18F9329-CD84-D2F0-30F9-907BC4775C8C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:05:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_prod_rastro" directorySegmentName="seg_0" id="CEB29A48-1F53-B149-0F7B-34E7ECB159EB">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:09:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qLote" id="0540DC95-922E-F3E3-E835-479899B30E6D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:10:41 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dFab" id="0FD61083-CE98-220D-6093-21671DA1E84A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:11:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="6A6EF4FA-2B42-30F7-5581-8C9B2AF4A906">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:49:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="dVal" id="90F588D7-5744-9695-5B19-B2F3C533BBB4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:11:56 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="9CDAFEB3-C294-39C3-A801-BE43793AF54A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cAgreg" id="AEB4E7B3-0AF0-048F-A886-DFB03155F13F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:12:22 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nLote" id="CC6060A1-6EC6-9E43-7B6E-F504D42C5202">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:10:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="E188A533-E37D-7D08-735F-3F6F8ACCA34D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_rastro_TNFe_infNFe_det_prod_FK" id="7E5D6F03-D6D0-0702-7278-BAAF49365D9B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:41:40 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_prod_rastro_PK" id="4A0B4143-3C9A-D132-4671-72E31CF68547">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:50:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_emit" directorySegmentName="seg_0" id="ECC7C3AC-3A1D-57C2-C406-941D8A9632EF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xCpl" id="0727D0E8-1563-A0AD-89BC-065EE2288969">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xBairro" id="0F8CE1DF-39AC-B1AC-7EF3-F3226D867B09">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="fone" id="24E9D912-51B2-BD98-AF2D-218B84CDFFE5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CEP" id="31BFE7EE-19A0-E3D5-8236-0ABE96C51AEE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nro" id="31D36F92-3542-75D9-4BD5-C49E0B761CF9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UF" id="452F519A-27A5-AE69-EC57-71D59E8931AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cMun" id="63D76AA3-BBD4-9B67-EC93-E9D81E2E3AE7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xMun" id="65A9694C-6CF9-5F33-88DC-AFB87779F0AC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="72EE5B67-18C4-C377-F49D-81A56462A205">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xPais" id="73D761BF-B479-4ADD-ED8D-F3B6CAE2A782">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Doc" id="7526AB49-C467-31F7-6AD1-1178ACAA6AF8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xNome" id="ABC0E102-9750-0C1E-715B-AA4EBAC1C460">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="IEST" id="ABF0E51C-19F6-430C-82FF-5B5E9257E695">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="BC75D73E-71A3-E146-1891-286681830453">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:18:37 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="IM" id="CD65E913-5565-2A45-4FE8-F2F159511957">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xLgr" id="D97EA19E-2A99-C8F9-310D-C5C0D3FABD44">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CRT" id="DF5A48C9-826B-7AF0-5B67-F150581D6566">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xFant" id="DF97BA13-B2D2-CD0F-DD5B-05693603DBF9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="E04B2815-073D-908B-D702-8119F16308AA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:18:37 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CNAE" id="E62C9517-A7D9-CA96-0163-D9A54722B5B1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cPais" id="E839A32E-09D3-F149-C56F-C8563983677F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="IE" id="FE6ABC2B-9FBC-8CF0-9A23-C60A329D0A3D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_emit_TSS_Arquivo_FK" id="9218870A-228A-8432-2E27-778C9953EDED">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:18:37 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_emit_PK" id="58413481-AFBF-2224-E9FC-4A0727B75F18">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:19:56 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_IPI" directorySegmentName="seg_0" id="F2F52D4D-53B8-94ED-AF7E-DA25A9539F75">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:02:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nItem" id="0E00DA2F-0ACE-6CA7-BEE0-13CEAC5FDF3B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:26:37 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qSelo" id="2548EB66-E4E9-80F1-23EB-232F52083473">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:06:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vIPI" id="690163F3-EFF0-E302-3854-CD1967AAA00F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:12:54 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="725D3F27-064A-C596-97B2-013338EF89F9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cSelo" id="982B036F-0B74-C579-C432-5FF9FA86C0CD">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:05:21 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="qUnid" id="ADAFD42F-F126-DE09-AE78-347D655F7AE8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:11:11 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CNPJProd" id="B43FB0BA-FF84-63F3-75A9-4243F9659D85">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:04:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vBC" id="C9C8BDAD-9E45-CF4D-B162-70E4D603F4C1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:09:53 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="vUnid" id="E001D7FA-621A-4CB6-F3C7-F45FE6FF3370">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:11:57 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="E46F4B58-4205-CF8D-FD18-66B443B439B8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cEnq" id="E69C8A3F-3B6B-DEE7-F55D-62DC922122E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:06:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="clEnq" id="EBFA6D4D-8A24-0F0D-0EDE-615D2BEF6F46">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:04:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CST" id="FA801782-1AA3-2DDA-1A4E-F6EC07313FC5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:09:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="pIPI" id="FCD89D91-B46A-2597-1168-5F05DEC46455">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:10:22 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_IPI_TSS_Arquivo_FK" id="5D62961E-B517-CF55-A523-2D5CE4B19334">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:14 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_IPI_PK" id="DE828A34-963A-90A1-25FB-07005CB57C3A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:23:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+<SqlServerTable class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_dest" directorySegmentName="seg_0" id="F41EDD1A-694B-DF25-3210-72C897681B99">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="CEP" id="0F14A93C-0FE1-1582-55A1-747036B3CDCC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:28:33 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="indIEDest" id="1CBA3E83-0732-F5F4-9A25-B05967B8EA86">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="email" id="2435B002-8EA6-E970-C9EA-EF47FF384B5A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="IE" id="26FB0679-526A-A80D-CC3A-6ACA7EBBE6D1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cPais" id="2913B3FB-49E6-9710-6035-B32F7C20E98E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:29:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xLgr" id="321AB124-60AC-67ED-805E-9F8EE46A8C6C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:24:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="3B46B0B8-FC22-497A-1146-91ECD33B2364">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="IM" id="3C269A9E-EE4A-49CA-FF43-215C23940EC7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xNome" id="446AA8FD-CCC6-6F0B-FE6D-0912D96F97B7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="UF" id="59B0D626-2709-3692-9152-3122A5A5574B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:27:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xCpl" id="78FF650B-F6E4-EBE3-72DB-61065422D9D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:25:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xBairro" id="7BA4BC20-25E9-9588-BB6B-7AE8081FBED9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:26:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="7BCC6B0B-0592-95A5-89F0-931B6E75DBF8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:34:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="fone" id="7D769FB3-C44A-A595-3B1E-2019B04490BF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:30:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xPais" id="80A9CA81-A9C6-5D07-1299-F886C09B2EDE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:30:21 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="cMun" id="86B5F3FF-D47B-1933-DCE7-110B8D599E00">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:26:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Doc" id="9E156060-F12E-16E8-1FAC-180EF59719AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="A8ECA720-576C-25C3-B5BA-7F22D1D5267B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="nro" id="C7555E29-D980-2F67-60F7-B38FB63F581A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:25:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="xMun" id="F97C0FA0-60A9-F803-28A9-3450248C54E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:27:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="ISUF" id="FBD3EF2B-C287-B942-6023-5A50DE57BE25">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_dest_TSS_Arquivo_FK" id="DAA64280-8264-D9E2-CFCE-0F9D466E78E6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_dest_PK" id="629B7C01-ED60-2A66-9A01-C58F5807B7C5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:17:07 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</SqlServerTable>
+</SqlServerTables>
+</StorageDesignSqlServerv2k12>

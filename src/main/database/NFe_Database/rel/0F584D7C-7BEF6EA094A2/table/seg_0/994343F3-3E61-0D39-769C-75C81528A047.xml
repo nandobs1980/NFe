@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="994343F3-3E61-0D39-769C-75C81528A047" name="TNFe_infNFe_det_imposto_ISSQN">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:05 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="4FEEE01E-406C-2992-49E9-BEC3608490CA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08C1C56A-083F-BE48-7F1D-7B6C10B96B6B" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="TSS_Arquivo_Id_Empresa" id="31B2B9A8-EE57-7BB4-323E-668CF0C9F223">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08C1C56A-083F-BE48-7F1D-7B6C10B96B6B" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="Dt_Inclusao" id="02D5E9B9-A034-643C-14E1-3053D5BEC658">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:58:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E444122A-E7A6-D606-C7E2-33C13DB419AE" name="TNFe_infNFe_det_imposto_ISSQN_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:58:32 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FEEE01E-406C-2992-49E9-BEC3608490CA"/>
+<colUsage columnID="31B2B9A8-EE57-7BB4-323E-668CF0C9F223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D86DD84-EA50-3E98-52D4-72A6333E0BAC" name="TNFe_infNFe_det_imposto_ISSQN_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:57:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FEEE01E-406C-2992-49E9-BEC3608490CA"/>
+<colUsage columnID="31B2B9A8-EE57-7BB4-323E-668CF0C9F223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

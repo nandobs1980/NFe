@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<RoleSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.RoleSqlServerv2k12" directorySegmentName="seg_0" id="7A263922-30E5-083D-BD19-7E17C1DDC0F9_PUBLIC" name="PUBLIC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<database>7A263922-30E5-083D-BD19-7E17C1DDC0F9</database>
+</RoleSqlServerv2k12>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="132C1CF9-047A-1BAD-B611-47EE6685A058" containerWithKeyObject="ECC7C3AC-3A1D-57C2-C406-941D8A9632EF" localFKIndex="9218870A-228A-8432-2E27-778C9953EDED" name="TNFe_infNFe_emit_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:18:37 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<referredTableLongName>TSS_Arquivo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>545013D0-D79B-E72B-B13D-E5A15B4D130C</referredTableID>
+<keyObject>38E00ADC-7C16-E06D-04D2-AF7EAC9EB696</keyObject>
+<referredKeyID>38E00ADC-7C16-E06D-04D2-AF7EAC9EB696</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Arquivo,Id_Empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

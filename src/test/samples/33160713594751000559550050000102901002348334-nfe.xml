@@ -1,1 +1,295 @@
-<?xml version="1.0" encoding="UTF-8"?><nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="3.10"><NFe xmlns="http://www.portalfiscal.inf.br/nfe"><infNFe Id="NFe33160713594751000559550050000102901002348334" versao="3.10"><ide><cUF>33</cUF><cNF>00234833</cNF><natOp>VENDA DE MERCADORIA</natOp><indPag>2</indPag><mod>55</mod><serie>5</serie><nNF>10290</nNF><dhEmi>2016-07-05T09:50:00-03:00</dhEmi><dhSaiEnt>2016-07-05T09:50:00-03:00</dhSaiEnt><tpNF>1</tpNF><idDest>1</idDest><cMunFG>3304557</cMunFG><tpImp>1</tpImp><tpEmis>1</tpEmis><cDV>4</cDV><tpAmb>1</tpAmb><finNFe>1</finNFe><indFinal>1</indFinal><indPres>1</indPres><procEmi>0</procEmi><verProc>2.53</verProc></ide><emit><CNPJ>13594751000559</CNPJ><xNome>NOVA GERACAO COMESTIVEIS LTDA</xNome><xFant>COPA 370</xFant><enderEmit><xLgr>RUA BARATA RIBEIRO</xLgr><nro>370</nro><xBairro>COPACABANA</xBairro><cMun>3304557</cMun><xMun>RIO DE JANEIRO</xMun><UF>RJ</UF><CEP>22040002</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>2138619040</fone></enderEmit><IE>86718928</IE><CRT>3</CRT></emit><dest><CNPJ>14686285000170</CNPJ><xNome>SANTOS &amp; SA GALERIA DE ARTE E BISTRO LTDA</xNome><enderDest><xLgr>R. ANIBAL DE MENDONCA</xLgr><nro>175</nro><xBairro>IPANEMA</xBairro><cMun>3304557</cMun><xMun>RIO DE JANEIRO</xMun><UF>RJ</UF><CEP>22410050</CEP><cPais>1058</cPais><xPais>BRASIL</xPais><fone>2121478259</fone></enderDest><indIEDest>1</indIEDest><IE>79546461</IE><email>fiscal@riso.art.br</email></dest><det nItem="1"><prod><cProd>007035</cProd><cEAN>6942754800137</cEAN><xProd>FARINHA PANKO 1KG FUKUMATSU</xProd><NCM>19059090</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>2.0000</qCom><vUnCom>31.90000000</vUnCom><vProd>63.80</vProd><cEANTrib>6942754800137</cEANTrib><uTrib>UN</uTrib><qTrib>2.0000</qTrib><vUnTrib>31.90000000</vUnTrib><indTot>1</indTot></prod><imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>63.80</vBC><pICMS>20.0000</pICMS><vICMS>12.76</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>99</CST><vBC>0</vBC><pIPI>0</pIPI><vIPI>0</vIPI></IPITrib></IPI><PIS><PISAliq><CST>01</CST><vBC>63.80</vBC><pPIS>1.6500</pPIS><vPIS>1.05</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>63.80</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>4.85</vCOFINS></COFINSAliq></COFINS></imposto></det><det nItem="2"><prod><cProd>006628</cProd><cEAN>0000000066280</cEAN><xProd>SEMENTE DE ABOBORA S/C CRUA KG</xProd><NCM>12099100</NCM><CFOP>5102</CFOP><uCom>KG</uCom><qCom>0.2000</qCom><vUnCom>89.90000000</vUnCom><vProd>17.98</vProd><cEANTrib>0000000066280</cEANTrib><uTrib>KG</uTrib><qTrib>0.2000</qTrib><vUnTrib>89.90000000</vUnTrib><indTot>1</indTot></prod><imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>17.98</vBC><pICMS>20.0000</pICMS><vICMS>3.60</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>99</CST><vBC>0</vBC><pIPI>0</pIPI><vIPI>0</vIPI></IPITrib></IPI><PIS><PISAliq><CST>01</CST><vBC>17.98</vBC><pPIS>1.6500</pPIS><vPIS>0.30</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>17.98</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>1.37</vCOFINS></COFINSAliq></COFINS></imposto></det><det nItem="3"><prod><cProd>001320</cProd><cEAN>7898546064012</cEAN><xProd>FAVA DE BAUNILHA CONDBRAS C/01 UND</xProd><NCM>09051000</NCM><CFOP>5102</CFOP><uCom>UN</uCom><qCom>5.0000</qCom><vUnCom>12.90000000</vUnCom><vProd>64.50</vProd><cEANTrib>7898546064012</cEANTrib><uTrib>UN</uTrib><qTrib>5.0000</qTrib><vUnTrib>12.90000000</vUnTrib><indTot>1</indTot></prod><imposto><ICMS><ICMS00><orig>0</orig><CST>00</CST><modBC>3</modBC><vBC>64.50</vBC><pICMS>20.0000</pICMS><vICMS>12.90</vICMS></ICMS00></ICMS><IPI><cEnq>999</cEnq><IPITrib><CST>99</CST><vBC>0</vBC><pIPI>0</pIPI><vIPI>0</vIPI></IPITrib></IPI><PIS><PISAliq><CST>01</CST><vBC>64.50</vBC><pPIS>1.6500</pPIS><vPIS>1.06</vPIS></PISAliq></PIS><COFINS><COFINSAliq><CST>01</CST><vBC>64.50</vBC><pCOFINS>7.6000</pCOFINS><vCOFINS>4.90</vCOFINS></COFINSAliq></COFINS></imposto></det><total><ICMSTot><vBC>146.28</vBC><vICMS>29.26</vICMS><vICMSDeson>0</vICMSDeson><vFCPUFDest>0</vFCPUFDest><vICMSUFDest>0</vICMSUFDest><vICMSUFRemet>0</vICMSUFRemet><vBCST>0</vBCST><vST>0</vST><vProd>146.28</vProd><vFrete>0</vFrete><vSeg>0</vSeg><vDesc>0</vDesc><vII>0</vII><vIPI>0</vIPI><vPIS>2.41</vPIS><vCOFINS>11.12</vCOFINS><vOutro>0</vOutro><vNF>146.28</vNF></ICMSTot></total><transp><modFrete>1</modFrete></transp></infNFe><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#"><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></SignatureMethod><Reference URI="#NFe33160713594751000559550050000102901002348334"><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform><Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></Transform></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod><DigestValue>AJKvKENJ0vA9bdMlsJ4nRVfkADA=</DigestValue></Reference></SignedInfo><SignatureValue>CMRUJnVDo33anPdF1jUxO4zE8NVHMK5TefnCBILXjtSoO/nhfLIdAkUzTAI9W8uuQQO96Xu6vgqjnCaPLYkuzPG6v5CLL7W/a7FdtC9+TUSZRc11UyuAJH4yM4sKEFEBnczaS2vOIuQico3I/D47EtKpNm7rTgTFBFXUUBMr96+UZC/NQzgIVpTayzVJWcdaFhSSS9HGCd3ZLhZWEnE4kB6bqPS44ycK6yDI8KUeMjvKA5K+y58RV3tirB8/knMmgqDxcRPIBc6P1tovVrPlf967TwYGCgOwJTFMP262Xapp/2XdEULPGVe1no/SbSoxRqzpO8xKwGIoUazhzBTc9w==</SignatureValue><KeyInfo><X509Data><X509Certificate>MIIIWzCCBkOgAwIBAgIQQ+DED7X51rpN1bkbm4ZPKjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4XDTE2MDcwMTAwMDAwMFoXDTE3MDYzMDIzNTk1OVowgf4xCzAJBgNVBAYTAkJSMRMwEQYDVQQKFApJQ1AtQnJhc2lsMQswCQYDVQQIEwJSSjEXMBUGA1UEBxQOUklPIERFIEpBTkVJUk8xNjA0BgNVBAsULVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEWMBQGA1UECxQNUkZCIGUtQ05QSiBBMTEtMCsGA1UECxQkQXV0ZW50aWNhZG8gcG9yIEFSIEluc3RpdHV0byBGZW5hY29uMTUwMwYDVQQDEyxOT1ZBIEdFUkFDQU8gQ09NRVNUSVZFSVMgTFREQToxMzU5NDc1MTAwMDEyNTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMyDC5ii4vQex7dSJgD+cJaPO4j792jNV2KTZiLLNQ3Qa50FcB3A1dHRmYCL+HFRYW5Ffb6Ecvz8l9amTa8hqmUVjpNl88DSMEIbglB1oQBQzq785cNeFWI3xW+Vdw5fO5s+Fjpel2hdGGqeYBkxpsWoRTZhzkZ4QwtoYztD99el3GzZWf70l8/jGh6mXOXFc3Zs2lcNj169AW8jFu45Qen4DZL68nRlrAm+f1YJ/pwvv0gKmY4TfQvY7bdmCJoYb/P79YRmjsFwXxyOsrfJS5AZt4l3NkQYYr2PLnbvvK6XI8KjpZWZwFYQ7Ewp42YsuCPgvLpPy7AddurZk2vKTEECAwEAAaOCA1gwggNUMIG9BgNVHREEgbUwgbKgOAYFYEwBAwSgLwQtMDYwODE5NzYwNzA3MjUwNTc5MjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoCEGBWBMAQMCoBgEFkZFTElQRSBESVVBTkEgTVVTU0FMRU2gGQYFYEwBAwOgEAQOMTM1OTQ3NTEwMDAxMjWgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgR9jb250YWJpbGlkYWRlQGNhc2FzcGVkcm8uY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAULpHq1m3lslmC3DiFKXY0FlY80D4wDgYDVR0PAQH/BAQDAgXgMH8GA1UdIAR4MHYwdAYGYEwBAgEMMGowaAYIKwYBBQUHAgEWXGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9SRkIvRFBDX0FDX0NlcnRpc2lnbl9SRkIucGRmMIIBFgYDVR0fBIIBDTCCAQkwV6BVoFOGUWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzQvTGF0ZXN0Q1JMLmNybDBWoFSgUoZQaHR0cDovL2ljcC1icmFzaWwub3V0cmFsY3IuY29tLmJyL3JlcG9zaXRvcmlvL2xjci9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25SRkJHNC9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBmwYIKwYBBQUHAQEEgY4wgYswXwYIKwYBBQUHMAKGU2h0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9SRkJfRzQucDdjMCgGCCsGAQUFBzABhhxodHRwOi8vb2NzcC5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQAXYyqeNERSJV9pX1rUbHjsjrvJ4g+DIOIayeIRGhupm4LIjzQwqXUf51AKXjQvhLEGtX0T82XZb2E5HHC/HHiA05ArkfLw2iKwxE6DeWSb7+QWPxRVlM7lxXiAPOu7u1hwSm+Q3p+Tx1/2B96UDQ3i3cGHRDgsB+9EN/B1vKec3elJz4Z4QXRzRv5Cr0hhMf2fjiceMDu7PuJnRx5xqLx+IoWcGUIxGpqo6mhqQstcMN0z6hy5RiM5WeKJgBUHyOuaHvZ1tr1JoLe+71/68fVl5wDPNczhxxwKdFZgENN0LzLo3b8FQXTOsKxB2xqlgPVdIz22HyOETTnA/hXJOxpEqyE1hdkndYfkYZTMQpr8jquCraz7RVagD9fL5G6SFpdVKueQMMXTTAG0FF6gMIOtBAuIMW5MJMPV8PkoVsj1MtEvQkuvnMgrRbatuEdwUOqN03ALG9KCQpdubzhIyZfVaKbkdqgvnxd991i/0DO47ZsZD0MBY+6jFk2knH42luzc3fCwYAq5sclS16FGnc49fwg3PHHhHc4Bbjsq6mD6oMlHeAB84LjgMSdJbIV5wt0YiZFVcT/W0T/zl3fh0mFbkf2oxms4B6lYXFDM6BF6/JBgolTSW+OMJ5N5OLor5GaeytW1aqMfink7gEKuG60yW6ZuygiNzMH22Nkzkme0AQ==</X509Certificate></X509Data></KeyInfo></Signature></NFe><protNFe xmlns="http://www.portalfiscal.inf.br/nfe" versao="3.10"><infProt><tpAmb>1</tpAmb><verAplic>SVRS201606290836</verAplic><chNFe>33160713594751000559550050000102901002348334</chNFe><dhRecbto>2016-07-05T09:51:31-03:00</dhRecbto><nProt>333160087599038</nProt><digVal>AJKvKENJ0vA9bdMlsJ4nRVfkADA=</digVal><cStat>100</cStat><xMotivo>Autorizado o uso da NF-e</xMotivo></infProt></protNFe></nfeProc>
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc 
+    xmlns="http://www.portalfiscal.inf.br/nfe" versao="3.10">
+    <NFe 
+        xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe Id="NFe33160713594751000559550050000102901002348334" versao="3.10">
+            <ide>
+                <cUF>33</cUF>
+                <cNF>00234833</cNF>
+                <natOp>VENDA DE MERCADORIA</natOp>
+                <indPag>2</indPag>
+                <mod>55</mod>
+                <serie>5</serie>
+                <nNF>10290</nNF>
+                <dhEmi>2016-07-05T09:50:00-03:00</dhEmi>
+                <dhSaiEnt>2016-07-05T09:50:00-03:00</dhSaiEnt>
+                <tpNF>1</tpNF>
+                <idDest>1</idDest>
+                <cMunFG>3304557</cMunFG>
+                <tpImp>1</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>4</cDV>
+                <tpAmb>1</tpAmb>
+                <finNFe>1</finNFe>
+                <indFinal>1</indFinal>
+                <indPres>1</indPres>
+                <procEmi>0</procEmi>
+                <verProc>2.53</verProc>
+            </ide>
+            <emit>
+                <CNPJ>13594751000559</CNPJ>
+                <xNome>NOVA GERACAO COMESTIVEIS LTDA</xNome>
+                <xFant>COPA 370</xFant>
+                <enderEmit>
+                    <xLgr>RUA BARATA RIBEIRO</xLgr>
+                    <nro>370</nro>
+                    <xBairro>COPACABANA</xBairro>
+                    <cMun>3304557</cMun>
+                    <xMun>RIO DE JANEIRO</xMun>
+                    <UF>RJ</UF>
+                    <CEP>22040002</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                    <fone>2138619040</fone>
+                </enderEmit>
+                <IE>86718928</IE>
+                <CRT>3</CRT>
+            </emit>
+            <dest>
+                <CNPJ>14686285000170</CNPJ>
+                <xNome>SANTOS &amp; SA GALERIA DE ARTE E BISTRO LTDA</xNome>
+                <enderDest>
+                    <xLgr>R. ANIBAL DE MENDONCA</xLgr>
+                    <nro>175</nro>
+                    <xBairro>IPANEMA</xBairro>
+                    <cMun>3304557</cMun>
+                    <xMun>RIO DE JANEIRO</xMun>
+                    <UF>RJ</UF>
+                    <CEP>22410050</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                    <fone>2121478259</fone>
+                </enderDest>
+                <indIEDest>1</indIEDest>
+                <IE>79546461</IE>
+                <email>fiscal@riso.art.br</email>
+            </dest>
+            <det nItem="1">
+                <prod>
+                    <cProd>007035</cProd>
+                    <cEAN>6942754800137</cEAN>
+                    <xProd>FARINHA PANKO 1KG FUKUMATSU</xProd>
+                    <NCM>19059090</NCM>
+                    <CFOP>5102</CFOP>
+                    <uCom>UN</uCom>
+                    <qCom>2.0000</qCom>
+                    <vUnCom>31.90000000</vUnCom>
+                    <vProd>63.80</vProd>
+                    <cEANTrib>6942754800137</cEANTrib>
+                    <uTrib>UN</uTrib>
+                    <qTrib>2.0000</qTrib>
+                    <vUnTrib>31.90000000</vUnTrib>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>0</orig>
+                            <CST>00</CST>
+                            <modBC>3</modBC>
+                            <vBC>63.80</vBC>
+                            <pICMS>20.0000</pICMS>
+                            <vICMS>12.76</vICMS>
+                        </ICMS00>
+                    </ICMS>
+                    <IPI>
+                        <cEnq>999</cEnq>
+                        <IPITrib>
+                            <CST>99</CST>
+                            <vBC>0</vBC>
+                            <pIPI>0</pIPI>
+                            <vIPI>0</vIPI>
+                        </IPITrib>
+                    </IPI>
+                    <PIS>
+                        <PISAliq>
+                            <CST>01</CST>
+                            <vBC>63.80</vBC>
+                            <pPIS>1.6500</pPIS>
+                            <vPIS>1.05</vPIS>
+                        </PISAliq>
+                    </PIS>
+                    <COFINS>
+                        <COFINSAliq>
+                            <CST>01</CST>
+                            <vBC>63.80</vBC>
+                            <pCOFINS>7.6000</pCOFINS>
+                            <vCOFINS>4.85</vCOFINS>
+                        </COFINSAliq>
+                    </COFINS>
+                </imposto>
+            </det>
+            <det nItem="2">
+                <prod>
+                    <cProd>006628</cProd>
+                    <cEAN>0000000066280</cEAN>
+                    <xProd>SEMENTE DE ABOBORA S/C CRUA KG</xProd>
+                    <NCM>12099100</NCM>
+                    <CFOP>5102</CFOP>
+                    <uCom>KG</uCom>
+                    <qCom>0.2000</qCom>
+                    <vUnCom>89.90000000</vUnCom>
+                    <vProd>17.98</vProd>
+                    <cEANTrib>0000000066280</cEANTrib>
+                    <uTrib>KG</uTrib>
+                    <qTrib>0.2000</qTrib>
+                    <vUnTrib>89.90000000</vUnTrib>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>0</orig>
+                            <CST>00</CST>
+                            <modBC>3</modBC>
+                            <vBC>17.98</vBC>
+                            <pICMS>20.0000</pICMS>
+                            <vICMS>3.60</vICMS>
+                        </ICMS00>
+                    </ICMS>
+                    <IPI>
+                        <cEnq>999</cEnq>
+                        <IPITrib>
+                            <CST>99</CST>
+                            <vBC>0</vBC>
+                            <pIPI>0</pIPI>
+                            <vIPI>0</vIPI>
+                        </IPITrib>
+                    </IPI>
+                    <PIS>
+                        <PISAliq>
+                            <CST>01</CST>
+                            <vBC>17.98</vBC>
+                            <pPIS>1.6500</pPIS>
+                            <vPIS>0.30</vPIS>
+                        </PISAliq>
+                    </PIS>
+                    <COFINS>
+                        <COFINSAliq>
+                            <CST>01</CST>
+                            <vBC>17.98</vBC>
+                            <pCOFINS>7.6000</pCOFINS>
+                            <vCOFINS>1.37</vCOFINS>
+                        </COFINSAliq>
+                    </COFINS>
+                </imposto>
+            </det>
+            <det nItem="3">
+                <prod>
+                    <cProd>001320</cProd>
+                    <cEAN>7898546064012</cEAN>
+                    <xProd>FAVA DE BAUNILHA CONDBRAS C/01 UND</xProd>
+                    <NCM>09051000</NCM>
+                    <CFOP>5102</CFOP>
+                    <uCom>UN</uCom>
+                    <qCom>5.0000</qCom>
+                    <vUnCom>12.90000000</vUnCom>
+                    <vProd>64.50</vProd>
+                    <cEANTrib>7898546064012</cEANTrib>
+                    <uTrib>UN</uTrib>
+                    <qTrib>5.0000</qTrib>
+                    <vUnTrib>12.90000000</vUnTrib>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <ICMS>
+                        <ICMS00>
+                            <orig>0</orig>
+                            <CST>00</CST>
+                            <modBC>3</modBC>
+                            <vBC>64.50</vBC>
+                            <pICMS>20.0000</pICMS>
+                            <vICMS>12.90</vICMS>
+                        </ICMS00>
+                    </ICMS>
+                    <IPI>
+                        <cEnq>999</cEnq>
+                        <IPITrib>
+                            <CST>99</CST>
+                            <vBC>0</vBC>
+                            <pIPI>0</pIPI>
+                            <vIPI>0</vIPI>
+                        </IPITrib>
+                    </IPI>
+                    <PIS>
+                        <PISAliq>
+                            <CST>01</CST>
+                            <vBC>64.50</vBC>
+                            <pPIS>1.6500</pPIS>
+                            <vPIS>1.06</vPIS>
+                        </PISAliq>
+                    </PIS>
+                    <COFINS>
+                        <COFINSAliq>
+                            <CST>01</CST>
+                            <vBC>64.50</vBC>
+                            <pCOFINS>7.6000</pCOFINS>
+                            <vCOFINS>4.90</vCOFINS>
+                        </COFINSAliq>
+                    </COFINS>
+                </imposto>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>146.28</vBC>
+                    <vICMS>29.26</vICMS>
+                    <vICMSDeson>0</vICMSDeson>
+                    <vFCPUFDest>0</vFCPUFDest>
+                    <vICMSUFDest>0</vICMSUFDest>
+                    <vICMSUFRemet>0</vICMSUFRemet>
+                    <vBCST>0</vBCST>
+                    <vST>0</vST>
+                    <vProd>146.28</vProd>
+                    <vFrete>0</vFrete>
+                    <vSeg>0</vSeg>
+                    <vDesc>0</vDesc>
+                    <vII>0</vII>
+                    <vIPI>0</vIPI>
+                    <vPIS>2.41</vPIS>
+                    <vCOFINS>11.12</vCOFINS>
+                    <vOutro>0</vOutro>
+                    <vNF>146.28</vNF>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>1</modFrete>
+            </transp>
+        </infNFe>
+        <Signature 
+            xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo 
+                xmlns="http://www.w3.org/2000/09/xmldsig#">
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></SignatureMethod>
+                <Reference URI="#NFe33160713594751000559550050000102901002348334">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></Transform>
+                        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></Transform>
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></DigestMethod>
+                    <DigestValue>AJKvKENJ0vA9bdMlsJ4nRVfkADA=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>CMRUJnVDo33anPdF1jUxO4zE8NVHMK5TefnCBILXjtSoO/nhfLIdAkUzTAI9W8uuQQO96Xu6vgqjnCaPLYkuzPG6v5CLL7W/a7FdtC9+TUSZRc11UyuAJH4yM4sKEFEBnczaS2vOIuQico3I/D47EtKpNm7rTgTFBFXUUBMr96+UZC/NQzgIVpTayzVJWcdaFhSSS9HGCd3ZLhZWEnE4kB6bqPS44ycK6yDI8KUeMjvKA5K+y58RV3tirB8/knMmgqDxcRPIBc6P1tovVrPlf967TwYGCgOwJTFMP262Xapp/2XdEULPGVe1no/SbSoxRqzpO8xKwGIoUazhzBTc9w==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>MIIIWzCCBkOgAwIBAgIQQ+DED7X51rpN1bkbm4ZPKjANBgkqhkiG9w0BAQsFADB4MQswCQYDVQQGEwJCUjETMBEGA1UEChMKSUNQLUJyYXNpbDE2MDQGA1UECxMtU2VjcmV0YXJpYSBkYSBSZWNlaXRhIEZlZGVyYWwgZG8gQnJhc2lsIC0gUkZCMRwwGgYDVQQDExNBQyBDZXJ0aXNpZ24gUkZCIEc0MB4XDTE2MDcwMTAwMDAwMFoXDTE3MDYzMDIzNTk1OVowgf4xCzAJBgNVBAYTAkJSMRMwEQYDVQQKFApJQ1AtQnJhc2lsMQswCQYDVQQIEwJSSjEXMBUGA1UEBxQOUklPIERFIEpBTkVJUk8xNjA0BgNVBAsULVNlY3JldGFyaWEgZGEgUmVjZWl0YSBGZWRlcmFsIGRvIEJyYXNpbCAtIFJGQjEWMBQGA1UECxQNUkZCIGUtQ05QSiBBMTEtMCsGA1UECxQkQXV0ZW50aWNhZG8gcG9yIEFSIEluc3RpdHV0byBGZW5hY29uMTUwMwYDVQQDEyxOT1ZBIEdFUkFDQU8gQ09NRVNUSVZFSVMgTFREQToxMzU5NDc1MTAwMDEyNTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMyDC5ii4vQex7dSJgD+cJaPO4j792jNV2KTZiLLNQ3Qa50FcB3A1dHRmYCL+HFRYW5Ffb6Ecvz8l9amTa8hqmUVjpNl88DSMEIbglB1oQBQzq785cNeFWI3xW+Vdw5fO5s+Fjpel2hdGGqeYBkxpsWoRTZhzkZ4QwtoYztD99el3GzZWf70l8/jGh6mXOXFc3Zs2lcNj169AW8jFu45Qen4DZL68nRlrAm+f1YJ/pwvv0gKmY4TfQvY7bdmCJoYb/P79YRmjsFwXxyOsrfJS5AZt4l3NkQYYr2PLnbvvK6XI8KjpZWZwFYQ7Ewp42YsuCPgvLpPy7AddurZk2vKTEECAwEAAaOCA1gwggNUMIG9BgNVHREEgbUwgbKgOAYFYEwBAwSgLwQtMDYwODE5NzYwNzA3MjUwNTc5MjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwoCEGBWBMAQMCoBgEFkZFTElQRSBESVVBTkEgTVVTU0FMRU2gGQYFYEwBAwOgEAQOMTM1OTQ3NTEwMDAxMjWgFwYFYEwBAwegDgQMMDAwMDAwMDAwMDAwgR9jb250YWJpbGlkYWRlQGNhc2FzcGVkcm8uY29tLmJyMAkGA1UdEwQCMAAwHwYDVR0jBBgwFoAULpHq1m3lslmC3DiFKXY0FlY80D4wDgYDVR0PAQH/BAQDAgXgMH8GA1UdIAR4MHYwdAYGYEwBAgEMMGowaAYIKwYBBQUHAgEWXGh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vZHBjL0FDX0NlcnRpc2lnbl9SRkIvRFBDX0FDX0NlcnRpc2lnbl9SRkIucGRmMIIBFgYDVR0fBIIBDTCCAQkwV6BVoFOGUWh0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vbGNyL0FDQ2VydGlzaWduUkZCRzQvTGF0ZXN0Q1JMLmNybDBWoFSgUoZQaHR0cDovL2ljcC1icmFzaWwub3V0cmFsY3IuY29tLmJyL3JlcG9zaXRvcmlvL2xjci9BQ0NlcnRpc2lnblJGQkc0L0xhdGVzdENSTC5jcmwwVqBUoFKGUGh0dHA6Ly9yZXBvc2l0b3Jpby5pY3BicmFzaWwuZ292LmJyL2xjci9DZXJ0aXNpZ24vQUNDZXJ0aXNpZ25SRkJHNC9MYXRlc3RDUkwuY3JsMB0GA1UdJQQWMBQGCCsGAQUFBwMCBggrBgEFBQcDBDCBmwYIKwYBBQUHAQEEgY4wgYswXwYIKwYBBQUHMAKGU2h0dHA6Ly9pY3AtYnJhc2lsLmNlcnRpc2lnbi5jb20uYnIvcmVwb3NpdG9yaW8vY2VydGlmaWNhZG9zL0FDX0NlcnRpc2lnbl9SRkJfRzQucDdjMCgGCCsGAQUFBzABhhxodHRwOi8vb2NzcC5jZXJ0aXNpZ24uY29tLmJyMA0GCSqGSIb3DQEBCwUAA4ICAQAXYyqeNERSJV9pX1rUbHjsjrvJ4g+DIOIayeIRGhupm4LIjzQwqXUf51AKXjQvhLEGtX0T82XZb2E5HHC/HHiA05ArkfLw2iKwxE6DeWSb7+QWPxRVlM7lxXiAPOu7u1hwSm+Q3p+Tx1/2B96UDQ3i3cGHRDgsB+9EN/B1vKec3elJz4Z4QXRzRv5Cr0hhMf2fjiceMDu7PuJnRx5xqLx+IoWcGUIxGpqo6mhqQstcMN0z6hy5RiM5WeKJgBUHyOuaHvZ1tr1JoLe+71/68fVl5wDPNczhxxwKdFZgENN0LzLo3b8FQXTOsKxB2xqlgPVdIz22HyOETTnA/hXJOxpEqyE1hdkndYfkYZTMQpr8jquCraz7RVagD9fL5G6SFpdVKueQMMXTTAG0FF6gMIOtBAuIMW5MJMPV8PkoVsj1MtEvQkuvnMgrRbatuEdwUOqN03ALG9KCQpdubzhIyZfVaKbkdqgvnxd991i/0DO47ZsZD0MBY+6jFk2knH42luzc3fCwYAq5sclS16FGnc49fwg3PHHhHc4Bbjsq6mD6oMlHeAB84LjgMSdJbIV5wt0YiZFVcT/W0T/zl3fh0mFbkf2oxms4B6lYXFDM6BF6/JBgolTSW+OMJ5N5OLor5GaeytW1aqMfink7gEKuG60yW6ZuygiNzMH22Nkzkme0AQ==</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe 
+        xmlns="http://www.portalfiscal.inf.br/nfe" versao="3.10">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>SVRS201606290836</verAplic>
+            <chNFe>33160713594751000559550050000102901002348334</chNFe>
+            <dhRecbto>2016-07-05T09:51:31-03:00</dhRecbto>
+            <nProt>333160087599038</nProt>
+            <digVal>AJKvKENJ0vA9bdMlsJ4nRVfkADA=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>

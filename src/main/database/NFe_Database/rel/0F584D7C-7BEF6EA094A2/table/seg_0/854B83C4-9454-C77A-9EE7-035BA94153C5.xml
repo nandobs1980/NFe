@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="854B83C4-9454-C77A-9EE7-035BA94153C5" name="TNFe_infNFe_det_prod_detExport">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 21:59:19 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="8A4A2208-D9A4-99E6-E73A-1D17FDCDA185">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92A15F32-47D7-FF74-D9A5-F3224AB57D7F" referredColumn="C5D5503E-DE46-700D-B6EC-B563EF9D84BF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="B351D3D9-BB9D-51B4-1398-46E06B3639FD">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92A15F32-47D7-FF74-D9A5-F3224AB57D7F" referredColumn="1D36218E-96A0-8A98-F00C-128DBE94D6C5"/>
+</associations>
+</Column>
+<Column name="nItem" id="49A2C123-A9A8-A5C0-DF6A-22C8985C48E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:49:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92A15F32-47D7-FF74-D9A5-F3224AB57D7F" referredColumn="AEE7C7CF-3C44-E64F-8C96-3F50A0918B3D"/>
+</associations>
+</Column>
+<Column name="nDraw" id="9FEFE1A8-D5CE-C7C4-9951-C1E75B0A49AB">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:00:18 UTC</createdTime>
+<commentInRDBMS>Número do ato concessório de Drawback</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nRE" id="07841DBB-5CAE-D86B-F09A-F393DB294647">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:01:26 UTC</createdTime>
+<commentInRDBMS>Registro de exportação</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="chNFe" id="678FE8EB-21AD-ED45-E7CB-3EE4169816AE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:03:07 UTC</createdTime>
+<commentInRDBMS>Chave de acesso da NF-e recebida para exportação&lt;br/&gt;Chaves de acesso da NF-e, compostas por: UF do emitente, AAMM da emissão da NFe, CNPJ do emitente, modelo, série e número da NF-e e código numérico+DV.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>44</dataTypeSize>
+<ownDataTypeParameters>44,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qExport" id="E6E116E9-D25D-BE7D-7E9A-0A2EC5EA372C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:03:45 UTC</createdTime>
+<commentInRDBMS>Quantidade do item efetivamente exportado</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8867E806-FE69-D7AD-45A9-B96877A812EE" name="TNFe_infNFe_det_prod_detExport_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:50:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A4A2208-D9A4-99E6-E73A-1D17FDCDA185"/>
+<colUsage columnID="B351D3D9-BB9D-51B4-1398-46E06B3639FD"/>
+<colUsage columnID="49A2C123-A9A8-A5C0-DF6A-22C8985C48E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB433A70-3398-F512-91C0-DBF3DD3F8D28" name="TNFe_detExport_TNFe_infNFe_det_prod_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:42:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A4A2208-D9A4-99E6-E73A-1D17FDCDA185"/>
+<colUsage columnID="B351D3D9-BB9D-51B4-1398-46E06B3639FD"/>
+<colUsage columnID="49A2C123-A9A8-A5C0-DF6A-22C8985C48E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,39 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS" directorySegmentName="seg_0" id="2CF7978D-A7B6-A580-95A2-3719F91D7DFE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:20 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="079A60E7-324C-3614-C46A-B0A099F95ADA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:07:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="1B1FE175-7503-1FA4-63AF-5C3E20C53350">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="9101688A-AC54-4629-DAFF-571582929461">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS_TSS_Arquivo_FK" id="4F9D286E-E7D2-E0F0-2D8F-E942EA4854AA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:06:38 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TNFe_infNFe_det_imposto_COFINS_PK" id="2764F377-8D18-C9B4-6771-CBA34F41E113">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:07:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataBaseSqlServerv2k12 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.DataBaseSqlServerv2k12" name="NFe" directorySegmentName="seg_0" id="7A263922-30E5-083D-BD19-7E17C1DDC0F9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ansiPadding>ON</ansiPadding>
+<ansiWarnings>ON</ansiWarnings>
+<arithabort>ON</arithabort>
+<concatNullYieldsNull>ON</concatNullYieldsNull>
+<numericRoundabort>ON</numericRoundabort>
+<recursiveTriggers>ON</recursiveTriggers>
+<fileGroups>
+<FileGroup class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FileGroupSqlServerv2k5" name="PRIMARY" id="D001CD9C-7705-E3F0-C916-3E88EBAB6847">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.DataFileSqlServerv2k5" name="DB1_Data.MDF" id="83489653-E9CB-3D7E-0CDD-0525C938E846">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 02:26:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<fileName>c:\program files\microsoft sql server\mssql\data\DB1_Data.MDF</fileName>
+</DataFile>
+</dataFiles>
+</FileGroup>
+</fileGroups>
+</DataBaseSqlServerv2k12>

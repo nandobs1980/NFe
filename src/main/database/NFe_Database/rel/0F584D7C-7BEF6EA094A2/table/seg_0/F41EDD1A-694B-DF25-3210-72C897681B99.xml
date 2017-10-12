@@ -1,0 +1,297 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F41EDD1A-694B-DF25-3210-72C897681B99" name="TNFe_dest">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:40:02 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="3B46B0B8-FC22-497A-1146-91ECD33B2364">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7302A6E5-94E1-5619-0F47-5BA03064F4AC" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="A8ECA720-576C-25C3-B5BA-7F22D1D5267B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7302A6E5-94E1-5619-0F47-5BA03064F4AC" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="Id_Doc" id="9E156060-F12E-16E8-1FAC-180EF59719AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:41:12 UTC</createdTime>
+<commentInRDBMS>Número do CNPJ&lt;br/&gt;ou&lt;br/&gt;Número do CPF&lt;br/&gt;ou &lt;br/&gt;Identificador do destinatário, em caso de comprador estrangeiro</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xNome" id="446AA8FD-CCC6-6F0B-FE6D-0912D96F97B7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:43:59 UTC</createdTime>
+<commentInRDBMS>Razão Social ou nome do destinatário</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xLgr" id="321AB124-60AC-67ED-805E-9F8EE46A8C6C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:24:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nro" id="C7555E29-D980-2F67-60F7-B38FB63F581A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:25:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xCpl" id="78FF650B-F6E4-EBE3-72DB-61065422D9D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:25:51 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xBairro" id="7BA4BC20-25E9-9588-BB6B-7AE8081FBED9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:26:15 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cMun" id="86B5F3FF-D47B-1933-DCE7-110B8D599E00">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:26:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xMun" id="F97C0FA0-60A9-F803-28A9-3450248C54E4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:27:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UF" id="59B0D626-2709-3692-9152-3122A5A5574B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:27:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="0F14A93C-0FE1-1582-55A1-747036B3CDCC">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:28:33 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cPais" id="2913B3FB-49E6-9710-6035-B32F7C20E98E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:29:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xPais" id="80A9CA81-A9C6-5D07-1299-F886C09B2EDE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:30:21 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fone" id="7D769FB3-C44A-A595-3B1E-2019B04490BF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:30:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indIEDest" id="1CBA3E83-0732-F5F4-9A25-B05967B8EA86">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:46:01 UTC</createdTime>
+<commentInRDBMS>Indicador da IE do destinatário:&lt;br/&gt;1 – Contribuinte ICMSpagamento à vista;&lt;br/&gt;2 – Contribuinte isento de inscrição;&lt;br/&gt;9 – Não Contribuinte</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IE" id="26FB0679-526A-A80D-CC3A-6ACA7EBBE6D1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:47:20 UTC</createdTime>
+<commentInRDBMS>Inscrição Estadual (obrigatório nas operações com contribuintes do ICMS)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ISUF" id="FBD3EF2B-C287-B942-6023-5A50DE57BE25">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:49:50 UTC</createdTime>
+<commentInRDBMS>Inscrição na SUFRAMA (Obrigatório nas operações com as áreas com benefícios de incentivos fiscais sob controle da SUFRAMA) &lt;br/&gt;PL_005d - 11/08/09 - alterado para aceitar 8 ou 9 dígitos</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IM" id="3C269A9E-EE4A-49CA-FF43-215C23940EC7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:51:04 UTC</createdTime>
+<commentInRDBMS>Inscrição Municipal do tomador do serviço</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="2435B002-8EA6-E970-C9EA-EF47FF384B5A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-01 18:51:50 UTC</createdTime>
+<commentInRDBMS>Informar o e-mail do destinatário. &lt;br/&gt;O campo pode ser utilizado para informar o e-mail de recepção da NF-e indicada pelo destinatário</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Inclusao" id="7BCC6B0B-0592-95A5-89F0-931B6E75DBF8">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:34:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="629B7C01-ED60-2A66-9A01-C58F5807B7C5" name="TNFe_dest_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:17:07 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8ECA720-576C-25C3-B5BA-7F22D1D5267B"/>
+<colUsage columnID="3B46B0B8-FC22-497A-1146-91ECD33B2364"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAA64280-8264-D9E2-CFCE-0F9D466E78E6" name="TNFe_dest_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:16:13 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B46B0B8-FC22-497A-1146-91ECD33B2364"/>
+<colUsage columnID="A8ECA720-576C-25C3-B5BA-7F22D1D5267B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

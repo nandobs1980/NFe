@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CEB29A48-1F53-B149-0F7B-34E7ECB159EB" name="TNFe_infNFe_det_prod_rastro">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:09:18 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="9CDAFEB3-C294-39C3-A801-BE43793AF54A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="193641C0-DE3B-8B21-C348-F992C3ACA8D1" referredColumn="C5D5503E-DE46-700D-B6EC-B563EF9D84BF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="E188A533-E37D-7D08-735F-3F6F8ACCA34D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:25:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="193641C0-DE3B-8B21-C348-F992C3ACA8D1" referredColumn="1D36218E-96A0-8A98-F00C-128DBE94D6C5"/>
+</associations>
+</Column>
+<Column name="nItem" id="6A6EF4FA-2B42-30F7-5581-8C9B2AF4A906">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:49:26 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="193641C0-DE3B-8B21-C348-F992C3ACA8D1" referredColumn="AEE7C7CF-3C44-E64F-8C96-3F50A0918B3D"/>
+</associations>
+</Column>
+<Column name="nLote" id="CC6060A1-6EC6-9E43-7B6E-F504D42C5202">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:10:13 UTC</createdTime>
+<commentInRDBMS>Número do lote do produto.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qLote" id="0540DC95-922E-F3E3-E835-479899B30E6D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:10:41 UTC</createdTime>
+<commentInRDBMS>Quantidade de produto no lote.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dFab" id="0FD61083-CE98-220D-6093-21671DA1E84A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:11:14 UTC</createdTime>
+<commentInRDBMS>Data de fabricação/produção. Formato AAAA-MM-DD.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT038</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dVal" id="90F588D7-5744-9695-5B19-B2F3C533BBB4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:11:56 UTC</createdTime>
+<commentInRDBMS>Data de validade. Informar o último dia do mês caso a validade não especifique o dia. Formato AAAA-MM-DD</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT038</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cAgreg" id="AEB4E7B3-0AF0-048F-A886-DFB03155F13F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:12:22 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A0B4143-3C9A-D132-4671-72E31CF68547" name="TNFe_infNFe_det_prod_rastro_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:50:58 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A6EF4FA-2B42-30F7-5581-8C9B2AF4A906"/>
+<colUsage columnID="E188A533-E37D-7D08-735F-3F6F8ACCA34D"/>
+<colUsage columnID="9CDAFEB3-C294-39C3-A801-BE43793AF54A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E5D6F03-D6D0-0702-7278-BAAF49365D9B" name="TNFe_rastro_TNFe_infNFe_det_prod_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 00:41:40 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CDAFEB3-C294-39C3-A801-BE43793AF54A"/>
+<colUsage columnID="E188A533-E37D-7D08-735F-3F6F8ACCA34D"/>
+<colUsage columnID="6A6EF4FA-2B42-30F7-5581-8C9B2AF4A906"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

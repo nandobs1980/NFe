@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="NFe_Database" id="A7127250-9FD2-3495-0DCF-0EC52FE802B1" version="3.5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 20:02:40 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+<modelPersistence>2</modelPersistence>
+<capitalNames>false</capitalNames>
+<designId>A7127250-9FD2-3495-0DCF-0EC52FE802B1</designId>
+</OSDM_Design>

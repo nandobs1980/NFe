@@ -1,0 +1,359 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A6DC50E-438C-937A-D5B7-A06D067928D1" name="TNFe_infNFe_ide">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 23:58:57 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="267DBE22-4077-A984-749C-8A0DFEABBFEF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09924585-B815-EC9A-2253-8D3CB751D90D" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="233FEA51-FFD4-1978-E842-85DD185C4F0B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09924585-B815-EC9A-2253-8D3CB751D90D" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="Id_NFe" id="A17BFA3C-F36E-F706-33FE-04441F82EB7B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 23:00:44 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cUF" id="06B3BD04-A71F-A53F-D6B1-904D5A7BCD38">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<comment>Código da UF do emitente do Documento Fiscal. Utilizar a Tabela do IBGE</comment>
+<commentInRDBMS>Código da UF do emitente do Documento Fiscal. Utilizar a Tabela do IBGE</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cNF" id="DE76AE1B-E104-070A-1655-2BD95D34CAA6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Código numérico que compõe a Chave de Acesso. Número aleatório gerado pelo emitente para cada NF-e</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="natOp" id="6A5BFA05-6B84-FF1D-6962-8A2A09A0572B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Descrição da Natureza da Operação</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mod" id="BC9D5618-8CBD-3B9D-8B26-75558754191E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Código do modelo do Documento Fiscal. 55 = NF-e; 65 = NFC-e.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="serie" id="300C8C71-9481-940D-148C-954DEB168153">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Série do Documento Fiscal&lt;br/&gt;série normal 0-889&lt;br/&gt;Avulsa Fisco 890-899&lt;br/&gt;SCAN 900-999</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nNF" id="6AB9105D-1EAB-3FF5-71BB-17E4EE992346">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Número do Documento Fiscal</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dhEmi" id="6503B2E5-DDF0-E170-576C-F3E93159C9A5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Data e Hora de emissão do Documento Fiscal (AAAA-MM-DDThh:mm:ssTZD) ex.: 2012-09-01T13:00:00-03:00</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dhSaiEnt" id="DDE6845D-E511-7650-5E5D-E58E6329BB2C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Data e Hora da saída ou de entrada da mercadoria / produto (AAAA-MM-DDTHH:mm:ssTZD)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpNF" id="C757445C-85EC-79F7-4430-BFBFC3F340E2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Tipo do Documento Fiscal (0 - entrada; 1 - saída)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idDest" id="C4324FA0-FA20-4D0A-CCD5-D26FA306ABC2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Identificador de Local de destino da operação (1-Interna;2-Interestadual;3-Exterior)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cMunFG" id="C607A213-C410-122C-A847-9A4767DBE872">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do IBGE)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpImp" id="765BB150-8C08-BB9C-3224-C010802E0C49">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Formato de impressão do DANFE (&lt;br/&gt;0-sem DANFE;&lt;br/&gt;1-DANFe Retrato; &lt;br/&gt;2-DANFe Paisagem;&lt;br/&gt;3-DANFe Simplificado;&lt;br/&gt;4-DANFe NFC-e;&lt;br/&gt;5-DANFe NFC-e em mensagem eletrônica)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpEmis" id="E49BC6AB-21DA-22BA-3B81-1CC635EE561F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Forma de emissão da NF-e&lt;br/&gt;1 - Normal;&lt;br/&gt;2 - Contingência FS&lt;br/&gt;3 - Contingência SCAN&lt;br/&gt;4 - Contingência DPEC&lt;br/&gt;5 - Contingência FSDA&lt;br/&gt;6 - Contingência SVC - AN&lt;br/&gt;7 - Contingência SVC - RS&lt;br/&gt;9 - Contingência off-line NFC-e</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cDV" id="27F91B2C-A117-9793-4EC4-5F68FA5D5CD4">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Digito Verificador da Chave de Acesso da NF-e</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tpAmb" id="3B3AFBB1-66B4-F888-C27B-D0A10A65C42D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Identificação do Ambiente:&lt;br/&gt;1 - Produção&lt;br/&gt;2 - Homologação</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="finNFe" id="253BD0C5-DC43-4742-B300-C4D68C129C6B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Finalidade da emissão da NF-e:&lt;br/&gt;1 - NFe normal&lt;br/&gt;2 - NFe complementar&lt;br/&gt;3 - NFe de ajuste&lt;br/&gt;4 - Devolução/Retorno</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indFinal" id="532388AF-2694-15D5-0FAD-D3041B4D018D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-21 00:00:43 UTC</createdTime>
+<commentInRDBMS>Indica operação com consumidor final (&lt;br/&gt;0-Não;&lt;br/&gt;1-Consumidor Final)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indPres" id="8E7C4E26-9ABC-19F7-9898-6D7351CFBE7E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-28 04:55:34 UTC</createdTime>
+<commentInRDBMS>Indicador de presença do comprador no estabelecimento comercial no momento da oepração&lt;br/&gt;0-Não se aplica ex.: Nota Fiscal complementar ou de ajuste;&lt;br/&gt;1-Operação presencial;&lt;br/&gt;2-Não presencial, internet;&lt;br/&gt;3-Não presencial, teleatendimento;&lt;br/&gt;4-NFC-e entrega em domicílio;&lt;br/&gt;5-Operação presencial, fora do estabelecimento;&lt;br/&gt;9-Não presencial, outros</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="procEmi" id="422669B6-A61C-FADA-668B-771CA967D7DF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-28 04:59:20 UTC</createdTime>
+<commentInRDBMS>Processo de emissão utilizado com a seguinte codificação:&lt;br/&gt;0 - emissão de NF-e com aplicativo do contribuinte;&lt;br/&gt;1 - emissão de NF-e avulsa pelo Fisco;&lt;br/&gt;2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site&lt;br/&gt;do Fisco;&lt;br/&gt;3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="verProc" id="C98E9FDB-56D0-5BB5-CDB5-96E406BA6FD7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-28 04:59:20 UTC</createdTime>
+<commentInRDBMS>versão do aplicativo utilizado no processo de emissão</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dhCont" id="E54E6E53-DAF6-E625-53DA-05F134F09180">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-28 05:00:41 UTC</createdTime>
+<commentInRDBMS>Informar a data e hora de entrada em contingência contingência no formato  (AAAA-MM-DDThh:mm:ssTZD) ex.: 2012-09-01T13:00:00-03:00.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="xJust" id="9724D1E4-FC0E-F2EF-030E-2CC9A80034EE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-28 05:03:03 UTC</createdTime>
+<commentInRDBMS>Informar a Justificativa da entrada</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_inclusao" id="37FE058F-BD75-4840-92F3-340F1EA03001">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-06 04:28:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11FD1C2F-E2C2-785E-D53C-A51C11B01F16" name="TNFe_infNFe_ide_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:15:22 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="267DBE22-4077-A984-749C-8A0DFEABBFEF"/>
+<colUsage columnID="233FEA51-FFD4-1978-E842-85DD185C4F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="258C1932-3A47-8A0B-5CDB-A2D822797014" name="TNFe_infNFe_ide_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:13:46 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="267DBE22-4077-A984-749C-8A0DFEABBFEF"/>
+<colUsage columnID="233FEA51-FFD4-1978-E842-85DD185C4F0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

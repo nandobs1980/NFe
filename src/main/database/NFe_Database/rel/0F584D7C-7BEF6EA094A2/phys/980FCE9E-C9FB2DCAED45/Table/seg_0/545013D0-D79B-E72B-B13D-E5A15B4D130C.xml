@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxySqlServerv2k5 class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.TableProxySqlServerv2k5" name="TSS_Arquivo" directorySegmentName="seg_0" id="545013D0-D79B-E72B-B13D-E5A15B4D130C">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<database>DB_NULLELEMENT</database>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Empresa" id="0180DAAE-F26B-5C92-953A-FF400B838962">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Modificacao" id="0C6CCB81-7B92-49DE-EBA9-C2A14F233318">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Id_Arquivo" id="367D8268-73DA-65E7-062B-7BF17FAFD8AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<asIdentity>true</asIdentity>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Inclusao" id="424A516A-0A1A-28A8-07B0-B106F1EA5918">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="pathXML" id="7F387AFF-5114-92B3-CAB3-05C9CE5CF469">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Criacao" id="941962B5-39FB-E59B-5969-FF42CB2C90D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Tamanho" id="A69C5701-42A4-599C-5CFB-88ED7629F6FF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="FileNameXML" id="C0F5E1F4-12E1-3666-1981-78894F975595">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="XML_Arquivo" id="D2034A2C-3EC2-24FE-0D0F-E36589FE81D9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k12.ColumnProxySqlServerv2k12" name="Dt_Utimo_Acesso" id="E115AAC2-9683-7C9E-003B-7ADB139A8C22">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.FKProxySqlServerv2k5" name="TSS_Arquivos_TSS_Empresa_FK" id="C87698C1-4DF3-0968-AD11-5F4CB53E31FF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>SSouza</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.sqlserver.v2k5.PKProxySqlServerv2k5" name="TSS_Arquivos_PK" id="38E00ADC-7C16-E06D-04D2-AF7EAC9EB696">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 20:01:28 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<clustered>true</clustered>
+</PrimaryKey>
+</primaryKeys>
+</TableProxySqlServerv2k5>

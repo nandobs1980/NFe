@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="545013D0-D79B-E72B-B13D-E5A15B4D130C" name="TSS_Arquivo">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:21:08 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="367D8268-73DA-65E7-062B-7BF17FAFD8AF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:25:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Id_Empresa" id="0180DAAE-F26B-5C92-953A-FF400B838962">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:35:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9BDCC7A5-3DF7-6E46-DFD3-E89106EBA2A7" referredColumn="F1B20436-51F4-BA4D-8A09-39F76A1648C7"/>
+</associations>
+</Column>
+<Column name="FileNameXML" id="C0F5E1F4-12E1-3666-1981-78894F975595">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 20:34:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pathXML" id="7F387AFF-5114-92B3-CAB3-05C9CE5CF469">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 20:34:55 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>800</dataTypeSize>
+<ownDataTypeParameters>800,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="XML_Arquivo" id="D2034A2C-3EC2-24FE-0D0F-E36589FE81D9">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:43:34 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Criacao" id="941962B5-39FB-E59B-5969-FF42CB2C90D5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 19:43:48 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Utimo_Acesso" id="E115AAC2-9683-7C9E-003B-7ADB139A8C22">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 19:44:31 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Modificacao" id="0C6CCB81-7B92-49DE-EBA9-C2A14F233318">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 19:44:57 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tamanho" id="A69C5701-42A4-599C-5CFB-88ED7629F6FF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-09-23 20:28:10 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Inclusao" id="424A516A-0A1A-28A8-07B0-B106F1EA5918">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:25:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38E00ADC-7C16-E06D-04D2-AF7EAC9EB696" name="TSS_Arquivos_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:25:03 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+<colUsage columnID="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C87698C1-4DF3-0968-AD11-5F4CB53E31FF" name="TSS_Arquivos_TSS_Empresa_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-08-20 22:35:36 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

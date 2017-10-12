@@ -1,0 +1,397 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3095AF5D-E79D-D741-1399-B483A5A4D97A" name="TNFe_total_ICMSTot">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:36:39 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="861DBBBD-1A55-0257-419B-D286FCD976D6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F61BE36-3833-1E6D-D07B-5ED40912FC2E" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="5B8EAD49-6A65-327F-B602-55861D69B96E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2F61BE36-3833-1E6D-D07B-5ED40912FC2E" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="vBC" id="40F891A0-69DB-A0D6-FF2E-32B8D8BADA97">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:37:51 UTC</createdTime>
+<commentInRDBMS>BC do ICMS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vICMS" id="BAB4EAC5-1364-60FC-BD26-D7F7FDF8FABA">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:38:30 UTC</createdTime>
+<commentInRDBMS>Valor Total do ICMS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vICMSDeson" id="6F406CEC-319D-F7D9-5B1C-3C3B222D3677">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:38:54 UTC</createdTime>
+<commentInRDBMS>Valor Total do ICMS desonerado</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vFCPUFDest" id="755DD477-DCA1-F7C8-C87B-C99788C451F7">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:39:25 UTC</createdTime>
+<commentInRDBMS>Valor total do ICMS relativo ao Fundo de Combate à Pobreza (FCP) para a UF de destino.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vICMSUFDest" id="BDD1651B-9CC0-B6E9-FFB6-91FA7229E67D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:39:53 UTC</createdTime>
+<commentInRDBMS>Valor total do ICMS de partilha para a UF do destinatário</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vICMSUFRemet" id="FBE3B93C-A253-5006-56B2-344DBD5E849A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:40:21 UTC</createdTime>
+<commentInRDBMS>Valor total do ICMS de partilha para a UF do remetente</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vFCP" id="0B7B15E9-34EA-86C8-6FC7-2DB390083EB5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:40:44 UTC</createdTime>
+<commentInRDBMS>Valor Total do FCP (Fundo de Combate à Pobreza).</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vBCST" id="EA029EE9-9C8A-8B23-7A97-0787364C1CB6">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:41:07 UTC</createdTime>
+<commentInRDBMS>BC do ICMS ST</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vST" id="809DED69-8088-A769-C8A1-57BE86BD8F96">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:41:32 UTC</createdTime>
+<commentInRDBMS>Valor Total do ICMS ST</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vFCPST" id="A1F959E1-6DA9-9BBA-90A4-34CCC3B5B436">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:02 UTC</createdTime>
+<commentInRDBMS>Valor Total do FCP (Fundo de Combate à Pobreza) retido por substituição tributária.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vFCPSTRet" id="94777AD7-E1E5-45A5-AC94-C90D90B1F166">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:28 UTC</createdTime>
+<commentInRDBMS>Valor Total do FCP (Fundo de Combate à Pobreza) retido anteriormente por substituição tributária.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vProd" id="E0B85265-3B45-0D0E-4D0C-8E9A826F405E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:42:55 UTC</createdTime>
+<commentInRDBMS>Valor Total dos produtos e serviços</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vFrete" id="9FD7D243-89CB-E46D-E2BC-6970EF522B78">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:43:17 UTC</createdTime>
+<commentInRDBMS>Valor Total do Frete</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vSeg" id="CD76B82C-7CC2-3F02-056E-06C9051A62B2">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:43:39 UTC</createdTime>
+<commentInRDBMS>Valor Total do Seguro</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vDesc" id="6D55078C-C308-D148-808A-146333F4D697">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:12 UTC</createdTime>
+<commentInRDBMS>Valor Total do Desconto</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vII" id="45D36B4B-D96E-E9F9-FEBB-4DEDFFEC28F5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:33 UTC</createdTime>
+<commentInRDBMS>Valor Total do II</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vIPI" id="3D582A3F-BA6B-B07D-9961-0DC49F96356D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:44:49 UTC</createdTime>
+<commentInRDBMS>Valor Total do IPI</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vIPIDevol" id="60234609-D22E-DFA5-F95C-75D259E994E3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:45:17 UTC</createdTime>
+<commentInRDBMS>Valor Total do IPI devolvido. Deve ser informado quando preenchido o Grupo Tributos Devolvidos na emissão de nota finNFe=4 (devolução) nas operações com não contribuintes do IPI. Corresponde ao total da soma dos campos id: UA04.</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vPIS" id="A23C2F61-2C33-AAAF-040F-ABB856B29DB5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:45:48 UTC</createdTime>
+<commentInRDBMS>Valor do PIS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vCOFINS" id="31E6C6CA-B44C-2ED4-5536-64BBB1ED7942">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:08 UTC</createdTime>
+<commentInRDBMS>Valor do COFINS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vOutro" id="DE004070-15AD-E88A-5291-0F7604C8450F">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:37 UTC</createdTime>
+<commentInRDBMS>Outras Despesas acessórias</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vNF" id="F51F0313-46CC-99D6-F609-FA89FDC2DFA3">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:46:58 UTC</createdTime>
+<commentInRDBMS>Valor Total da NF-e</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vTotTrib" id="81CD88F0-B9A0-37FC-2895-A4E130E469A1">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:47:34 UTC</createdTime>
+<commentInRDBMS>Valor estimado total de impostos federais, estaduais e municipais</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Dt_Inclusao" id="D1F4697F-F3A5-2CEA-32A2-8875D3C4CA37">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-08 22:48:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5C369B6-4024-259B-63D3-47BB3A1FC0E4" name="TNFe_total_ICMSTot_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:45 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="861DBBBD-1A55-0257-419B-D286FCD976D6"/>
+<colUsage columnID="5B8EAD49-6A65-327F-B602-55861D69B96E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="621AD81C-60D3-E9BF-6F00-F7D85B1EACB8" name="TNFe_total_ICMSTot_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-09 01:28:06 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="861DBBBD-1A55-0257-419B-D286FCD976D6"/>
+<colUsage columnID="5B8EAD49-6A65-327F-B602-55861D69B96E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
