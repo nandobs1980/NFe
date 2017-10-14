@@ -23,7 +23,7 @@ GO
  **********************************************************************************************************************/ 
 CREATE PROCEDURE dbo.SPnfe_IN_TSS_Log  ( @Nm_Processo VARCHAR (60)  
                                        , @Tp_Log TINYINT  
-                                       , @Ds_Log TEXT) 
+                                       , @Ds_Log VARCHAR(8000)) 
 AS 
 BEGIN 
 

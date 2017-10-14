@@ -4,7 +4,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_retirada_entrega'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_retirada_entrega
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados da NFe referente ao bloco Identificação do Local de Retirada/Entrega 
  Parâmetros........: Nenhum
@@ -16,7 +20,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_retirada_entrega ( @Id_Arquivo             BIGINT 
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_retirada_entrega ( @Id_Arquivo             BIGINT 
                                                           , @Id_Empresa             INTEGER 
                                                           , @Id_Retirada_Entrega    CHAR (1)  
                                                           , @Id_Doc                 DECIMAL (14)  

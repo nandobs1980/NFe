@@ -5,6 +5,11 @@ GO
 SET QUOTED_IDENTIFIER ON 
 GO
 
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_total_ICMSTot'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_TNFe_total_ICMSTot
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados da NFe referente ao bloco ICMS Total
  Parâmetros........: Nenhum
@@ -16,7 +21,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_TNFe_total_ICMSTot  ( @Id_Arquivo      BIGINT
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_total_ICMSTot  ( @Id_Arquivo      BIGINT
                                                  , @vBC             DECIMAL(15,2)
                                                  , @vICMS           DECIMAL (15,2)  
                                                  , @vICMSDeson      DECIMAL (15,2)  

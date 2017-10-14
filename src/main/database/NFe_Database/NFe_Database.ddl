@@ -434,7 +434,8 @@ CREATE TABLE TNFe_infNFe_det_imposto_IPI
      pIPI DECIMAL (7,4) , 
      qUnid DECIMAL (16,4) , 
      vUnid DECIMAL (15,4) , 
-     vIPI DECIMAL (15,2) 
+     vIPI DECIMAL (15,2) , 
+     Dt_inclusao DATETIME NOT NULL 
     )
     ON "default"
 GO 
@@ -1625,7 +1626,7 @@ CREATE TABLE TSS_Arquivo
      pathXML VARCHAR (800) , 
      XML_Arquivo TEXT NOT NULL , 
      Dt_Criacao DATETIME , 
-     Dt_Utimo_Acesso DATETIME , 
+     Dt_Ultimo_Acesso DATETIME , 
      Dt_Modificacao DATETIME , 
      Tamanho BIGINT , 
      Dt_Inclusao DATETIME NOT NULL 
@@ -1902,13 +1903,36 @@ ALTER TABLE TSS_Arquivo
     ON UPDATE NO ACTION 
 GO
 
+CREATE TABLE TSS_Log 
+    (
+     Id_Log BIGINT NOT NULL , 
+     Nm_Processo VARCHAR (60) , 
+     Tp_Log TINYINT , 
+     Ds_Log TEXT NOT NULL , 
+     Dt_Inclusao DATETIME 
+    )
+    ON "default"
+GO 
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Nome do Processo' , 'USER' , 'dbo' , 'TABLE' , 'TSS_Log' , 'COLUMN' , 'Nm_Processo' 
+GO
+
+    
+ALTER TABLE TSS_Log ADD CONSTRAINT TSS_Log_PK PRIMARY KEY CLUSTERED (Id_Log)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+     ON "default" 
+    GO
 
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
 -- 
--- CREATE TABLE                            17
+-- CREATE TABLE                            18
 -- CREATE INDEX                             0
--- ALTER TABLE                             49
+-- ALTER TABLE                             50
 -- CREATE VIEW                              0
 -- ALTER VIEW                               0
 -- CREATE PACKAGE                           0

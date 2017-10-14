@@ -4,7 +4,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_avulsa'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_avulsa
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados da NFe referente ao bloco de Emissão de avulsa
  Parâmetros........: Nenhum
@@ -16,7 +20,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_avulsa ( @Id_Arquivo   BIGINT
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_avulsa ( @Id_Arquivo   BIGINT
                                                 , @CNPJ         VARCHAR (14)  
                                                 , @xOrgao       VARCHAR (60)  
                                                 , @matr         VARCHAR (60)  
@@ -50,7 +54,7 @@ BEGIN
             GOTO TRATA_ERRO   
         END  
 
-        INSERT INTO dbo.TNFe_infNFe_retirada_entrega 
+        INSERT INTO dbo.TNFe_infNFe_avulsa 
                   ( Id_Arquivo
                   , Id_Empresa
                   , CNPJ      
@@ -82,7 +86,7 @@ BEGIN
 
         SET @COD_ERRO = @@ERROR   
         IF @COD_ERRO != 0 BEGIN   
-            SET @DESC_ERRO = 'ERRO AO INSERIR AS INFORMACOES da NFe referente a Identificação do Local de Retirada/Entrega'   
+            SET @DESC_ERRO = 'ERRO AO INSERIR AS INFORMACOES da NFe referente a Emissão de avulsa'   
             GOTO TRATA_ERRO   
         END
 

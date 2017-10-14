@@ -4,7 +4,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados da NFe referente ao bloco de ISSQN
  Parâmetros........: Nenhum
@@ -16,7 +20,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN ( @Id_Arquivo    BIGINT 
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN ( @Id_Arquivo    BIGINT 
                                                            , @vBC           DECIMAL (15,2)  
                                                            , @vAliq         DECIMAL (7,4) 
                                                            , @vISSQN        DECIMAL (15,2)  

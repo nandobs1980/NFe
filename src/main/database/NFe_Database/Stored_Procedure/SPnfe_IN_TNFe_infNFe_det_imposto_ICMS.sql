@@ -4,7 +4,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_det_imposto_IPI'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_det_imposto_IPI
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados da NFe referente ao bloco de ICMS
  Parâmetros........: Nenhum
@@ -16,7 +20,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ICMS ( @Id_Arquivo BIGINT  
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ICMS ( @Id_Arquivo BIGINT  
                                                           , @nItem      INTEGER
                                                           , @Tp_ICMS    VARCHAR (10) 
                                                           , @orig       TINYINT 

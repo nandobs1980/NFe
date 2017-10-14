@@ -4,7 +4,11 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_ArquivoXML'))
+BEGIN
+    DROP PROCEDURE SPnfe_IN_ArquivoXML
+END
+GO
 /********************************************************************************************************************** 
  Objetivo..........: Inserir dados do Arquivo XML
  Parâmetros........: @Id_Arquivo (output) - Retorna o Id do arquivo gravado 
@@ -16,7 +20,7 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-ALTER PROCEDURE dbo.SPnfe_IN_ArquivoXML  ( @Id_Empresa int
+CREATE PROCEDURE dbo.SPnfe_IN_ArquivoXML  ( @Id_Empresa int
                                          , @FileNameXML varchar(200)
                                 		 , @pathXML varchar(800)
                                          , @Dt_Criacao datetime
@@ -35,7 +39,7 @@ BEGIN
         DECLARE @COD_ERRO            INT         -- VARIÁVEL COM O RETORNO DE ERRO   
               , @DESC_ERRO           VARCHAR(800)-- VARIÁVEL COM A DESCRICAO DO ERRO   
               , @INT_RET_PROC        INT         -- VARIÁVEL COM O CÓDIGO DE RETORNO DE ERRO DE PROCS 
-              , @Ds_Log              Text        -- VARIÁVEL COM A DESCRIÇÃO DO LOG 
+              , @Ds_Log              VARCHAR(MAX)        -- VARIÁVEL COM A DESCRIÇÃO DO LOG 
         
         /* VERIFICA SE JÁ EXISTE UM ARQUIVO COM O MESMO NOME */
         IF (SELECT COUNT(1) 
