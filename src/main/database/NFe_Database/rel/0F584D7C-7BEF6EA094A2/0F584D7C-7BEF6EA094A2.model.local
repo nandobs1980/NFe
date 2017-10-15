@@ -556,7 +556,17 @@
 <colAssociation fkAssociation="4CB17358-18AB-7293-8E60-60AFE52D17AE" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
 </associations>
 </Column>
-<Column name="Tp_CONFINS" id="943994B0-7634-7C85-1B0C-6B0FC08FFCE0">
+<Column name="nItem" id="F103F769-0370-AC3B-7698-139873AA0073">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-14 23:55:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tp_COFINS" id="943994B0-7634-7C85-1B0C-6B0FC08FFCE0">
 <createdBy>fernandosouza</createdBy>
 <createdTime>2017-10-12 22:38:03 UTC</createdTime>
 <commentInRDBMS>COFINSAliq&lt;br/&gt;COFINSQtde&lt;br/&gt;COFINSNT&lt;br/&gt;COFINSOutr</commentInRDBMS>
@@ -675,6 +685,7 @@
 <indexColumnUsage>
 <colUsage columnID="9101688A-AC54-4629-DAFF-571582929461"/>
 <colUsage columnID="1B1FE175-7503-1FA4-63AF-5C3E20C53350"/>
+<colUsage columnID="F103F769-0370-AC3B-7698-139873AA0073"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4F9D286E-E7D2-E0F0-2D8F-E942EA4854AA" name="TNFe_infNFe_det_imposto_COFINS_TSS_Arquivo_FK">
@@ -1090,6 +1101,16 @@
 <ownDataTypeParameters>,15,2</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Dt_inclusao" id="AA570FEB-A01B-22E1-87C1-BEB3E8A45E20">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-14 00:56:49 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="DE828A34-963A-90A1-25FB-07005CB57C3A" name="TNFe_infNFe_det_imposto_IPI_PK">
@@ -1154,6 +1175,16 @@
 <associations>
 <colAssociation fkAssociation="08C1C56A-083F-BE48-7F1D-7B6C10B96B6B" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
 </associations>
+</Column>
+<Column name="nItem" id="8FC098AD-EE9F-C512-5840-36BB26DBA70D">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:01:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="vBC" id="0C0DAA01-C92E-E5C8-1B48-1F9D845DB156">
 <createdBy>fernandosouza</createdBy>
@@ -1391,6 +1422,7 @@
 <indexColumnUsage>
 <colUsage columnID="4FEEE01E-406C-2992-49E9-BEC3608490CA"/>
 <colUsage columnID="31B2B9A8-EE57-7BB4-323E-668CF0C9F223"/>
+<colUsage columnID="8FC098AD-EE9F-C512-5840-36BB26DBA70D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="4D86DD84-EA50-3E98-52D4-72A6333E0BAC" name="TNFe_infNFe_det_imposto_ISSQN_TSS_Arquivo_FK">
@@ -1442,6 +1474,16 @@
 <associations>
 <colAssociation fkAssociation="09FAC266-2227-1FA5-6C43-8998B0FE06D7" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
 </associations>
+</Column>
+<Column name="nItem" id="F702CF95-A86C-DC0A-5631-EEF79E0DA96A">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-14 23:42:43 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="Tp_PIS" id="916BDB04-4CAD-8CD6-6FCF-3F3D69AD89FE">
 <createdBy>fernandosouza</createdBy>
@@ -1562,6 +1604,7 @@
 <indexColumnUsage>
 <colUsage columnID="12BEC362-EC08-FFF6-24D1-04DAB708ECF2"/>
 <colUsage columnID="F2D281ED-A59D-6F42-5E23-B0E935011F66"/>
+<colUsage columnID="F702CF95-A86C-DC0A-5631-EEF79E0DA96A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="C28D0ED0-D3FC-19BD-D092-8DBBDB760E1E" name="TNFe_infNFe_det_imposto_PIS_TSS_Arquivo_FK">
@@ -3839,6 +3882,80 @@
 </ind_PK_UK>
 </indexes>
 </Table>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="203756E8-42F4-0460-77A5-A5E51E801E4B" name="TNFe_total_ISSQNtot">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:21:27 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Arquivo" id="863830B4-DD65-9CE8-3B2A-C6125098517E">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:22:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A938750-32B9-B60D-15E6-2D776011EDE6" referredColumn="367D8268-73DA-65E7-062B-7BF17FAFD8AF"/>
+</associations>
+</Column>
+<Column name="Id_Empresa" id="1F406353-7C87-7261-833A-B026CBD5DF8B">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:22:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A938750-32B9-B60D-15E6-2D776011EDE6" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
+</associations>
+</Column>
+<Column name="Dt_Inclusao" id="3DFBAEDB-FB0F-732C-4546-FE8FF4BF5564">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:22:23 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E15BD38A-10C5-7189-11B9-739203212183" name="TNFe_total_ISSQNtot_PK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:23:16 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="863830B4-DD65-9CE8-3B2A-C6125098517E"/>
+<colUsage columnID="1F406353-7C87-7261-833A-B026CBD5DF8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="596B92E6-EF3E-04C6-B20D-9927CDF61C6D" name="TNFe_total_ISSQNtot_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:22:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="863830B4-DD65-9CE8-3B2A-C6125098517E"/>
+<colUsage columnID="1F406353-7C87-7261-833A-B026CBD5DF8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
 <Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="545013D0-D79B-E72B-B13D-E5A15B4D130C" name="TSS_Arquivo">
 <createdBy>fernandosouza</createdBy>
 <createdTime>2017-08-20 22:21:08 UTC</createdTime>
@@ -3919,7 +4036,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="Dt_Utimo_Acesso" id="E115AAC2-9683-7C9E-003B-7ADB139A8C22">
+<Column name="Dt_Ultimo_Acesso" id="E115AAC2-9683-7C9E-003B-7ADB139A8C22">
 <createdBy>fernandosouza</createdBy>
 <createdTime>2017-09-23 19:44:31 UTC</createdTime>
 <ownerDesignName>NFe_Database</ownerDesignName>
@@ -4376,6 +4493,21 @@
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
 </ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8A938750-32B9-B60D-15E6-2D776011EDE6" containerWithKeyObject="203756E8-42F4-0460-77A5-A5E51E801E4B" localFKIndex="596B92E6-EF3E-04C6-B20D-9927CDF61C6D" name="TNFe_total_ISSQNtot_TSS_Arquivo_FK">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:22:35 UTC</createdTime>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<referredTableLongName>TSS_Arquivo</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>545013D0-D79B-E72B-B13D-E5A15B4D130C</referredTableID>
+<keyObject>38E00ADC-7C16-E06D-04D2-AF7EAC9EB696</keyObject>
+<referredKeyID>38E00ADC-7C16-E06D-04D2-AF7EAC9EB696</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_Arquivo,Id_Empresa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</ForeignKey>
 <ForeignKey class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9BDCC7A5-3DF7-6E46-DFD3-E89106EBA2A7" containerWithKeyObject="545013D0-D79B-E72B-B13D-E5A15B4D130C" localFKIndex="C87698C1-4DF3-0968-AD11-5F4CB53E31FF" name="TSS_Arquivos_TSS_Empresa_FK">
 <createdBy>fernandosouza</createdBy>
 <createdTime>2017-08-20 22:35:36 UTC</createdTime>
@@ -4409,11 +4541,15 @@
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="1F9844F9-D096-B0FF-BEAE-5A516C997731" otype="Table" vid="214EAFAC-808D-E2B2-117A-E9634CDB7828">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="956" y="1093" width="170" height="110"/>
+<bounds x="956" y="1093" width="191" height="109"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="203756E8-42F4-0460-77A5-A5E51E801E4B" otype="Table" vid="C9B1DA6C-183B-86C4-E913-027D195BCDF7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2210" y="349" width="170" height="110"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="2CF7978D-A7B6-A580-95A2-3719F91D7DFE" otype="Table" vid="66C05D6E-2E6A-5C40-9B7C-0D3A07AE0371">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="2163" y="547" width="401" height="193"/>
+<bounds x="2163" y="547" width="401" height="206"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3095AF5D-E79D-D741-1399-B483A5A4D97A" otype="Table" vid="BAF1D0A9-AE50-8A58-06B3-4C9B676693BB">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -4461,7 +4597,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="AB3D8DF9-4E2A-DD8A-2318-AB55C257B02B" otype="Table" vid="4D5BB755-4196-9B52-7D85-AED56A925306">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="1883" y="785" width="380" height="193"/>
+<bounds x="1883" y="785" width="380" height="206"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="CEB29A48-1F53-B149-0F7B-34E7ECB159EB" otype="Table" vid="51681290-A34B-E3FA-1E86-5800B0F6A035">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -4566,6 +4702,14 @@
 <point x="692" y="651"/>
 <point x="1631" y="651"/>
 <point x="1631" y="782"/>
+</points>
+</Connector>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="8A938750-32B9-B60D-15E6-2D776011EDE6" otype="FKIndexAssociation" vid_source="2340BB2E-543D-1052-7AC8-F6D49BD77A7C" vid_target="C9B1DA6C-183B-86C4-E913-027D195BCDF7">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<lineWidth>1</lineWidth>
+<points>
+<point x="692" y="601"/>
+<point x="2210" y="414"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="92A15F32-47D7-FF74-D9A5-F3224AB57D7F" otype="FKIndexAssociation" vid_source="6C74A0CB-3493-B10E-5B49-29C86FB432D1" vid_target="753BAC23-3D5B-FFE0-68E8-B846BF4DDBE1">

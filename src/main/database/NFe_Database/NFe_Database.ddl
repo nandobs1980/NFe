@@ -60,47 +60,7 @@ tnfe_infnfe_retirada_entrega
 drop TABLE
 tnfe_total_icmstot
 
-ALTER TABLE TNFe_dest 
-    DROP CONSTRAINT TNFe_dest_TSS_Arquivo_FK 
-
-
-ALTER TABLE TNFe_infNFe_avulsa 
-    DROP CONSTRAINT TNFe_infNFe_avulsa_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_imposto_COFINS 
-    DROP CONSTRAINT TNFe_infNFe_det_imposto_COFINS_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_imposto_ICMS 
-    DROP CONSTRAINT TNFe_infNFe_det_imposto_ICMS_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_imposto_IPI 
-    DROP CONSTRAINT TNFe_infNFe_det_imposto_IPI_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_imposto_ISSQN 
-    DROP CONSTRAINT TNFe_infNFe_det_imposto_ISSQN_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_imposto_PIS 
-    DROP CONSTRAINT TNFe_infNFe_det_imposto_PIS_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_det_prod 
-    DROP CONSTRAINT TNFe_infNFe_det_prod_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_emit 
-    DROP CONSTRAINT TNFe_infNFe_emit_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_ide 
-    DROP CONSTRAINT TNFe_infNFe_ide_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_infNFe_retirada_entrega 
-    DROP CONSTRAINT TNFe_infNFe_retirada_entrega_TSS_Arquivo_FK 
-
-ALTER TABLE TNFe_total_ICMSTot 
-    DROP CONSTRAINT TNFe_total_ICMSTot_TSS_Arquivo_FK 
-
 DROP TABLE TSS_Arquivo
-
-ALTER TABLE TSS_Arquivo 
-    DROP CONSTRAINT TSS_Arquivos_TSS_Empresa_FK 
 
 DROP TABLE TSS_Empresa
 */
@@ -269,7 +229,8 @@ CREATE TABLE TNFe_infNFe_det_imposto_COFINS
     (
      Id_Arquivo BIGINT NOT NULL , 
      Id_Empresa INTEGER NOT NULL , 
-     Tp_CONFINS VARCHAR (10) , 
+     nItem INTEGER NOT NULL , 
+     Tp_COFINS VARCHAR (10) , 
      CST CHAR (2) , 
      vBC DECIMAL (15,2) , 
      pCOFINS DECIMAL (7,4) , 
@@ -286,7 +247,7 @@ GO
 EXEC sp_addextendedproperty 'MS_Description' , 'COFINSAliq
 COFINSQtde
 COFINSNT
-COFINSOutr' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_det_imposto_COFINS' , 'COLUMN' , 'Tp_CONFINS' 
+COFINSOutr' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_det_imposto_COFINS' , 'COLUMN' , 'Tp_COFINS' 
 GO
 
 
@@ -327,7 +288,7 @@ GO
 EXEC sp_addextendedproperty 'MS_Description' , 'Data de inclusão do registro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_det_imposto_COFINS' , 'COLUMN' , 'Dt_Inclusao' 
 GO
 
-ALTER TABLE TNFe_infNFe_det_imposto_COFINS ADD CONSTRAINT TNFe_infNFe_det_imposto_COFINS_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa)
+ALTER TABLE TNFe_infNFe_det_imposto_COFINS ADD CONSTRAINT TNFe_infNFe_det_imposto_COFINS_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa, nItem)
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
@@ -515,6 +476,7 @@ CREATE TABLE TNFe_infNFe_det_imposto_ISSQN
     (
      Id_Arquivo BIGINT NOT NULL , 
      Id_Empresa INTEGER NOT NULL , 
+     nItem INTEGER NOT NULL , 
      vBC DECIMAL (15,2) , 
      vAliq DECIMAL (7,4) , 
      vISSQN DECIMAL (15,2) , 
@@ -620,7 +582,7 @@ GO
 EXEC sp_addextendedproperty 'MS_Description' , 'Data de inclusão do registro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_det_imposto_ISSQN' , 'COLUMN' , 'Dt_Inclusao' 
 GO
 
-ALTER TABLE TNFe_infNFe_det_imposto_ISSQN ADD CONSTRAINT TNFe_infNFe_det_imposto_ISSQN_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa)
+ALTER TABLE TNFe_infNFe_det_imposto_ISSQN ADD CONSTRAINT TNFe_infNFe_det_imposto_ISSQN_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa, nItem)
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
@@ -631,6 +593,7 @@ CREATE TABLE TNFe_infNFe_det_imposto_PIS
     (
      Id_Arquivo BIGINT NOT NULL , 
      Id_Empresa INTEGER NOT NULL , 
+     nItem INTEGER NOT NULL , 
      Tp_PIS VARCHAR (7) , 
      CST CHAR (2) , 
      vBC DECIMAL (15,2) , 
@@ -687,7 +650,7 @@ GO
 EXEC sp_addextendedproperty 'MS_Description' , 'Data de inclusão do Registro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_det_imposto_PIS' , 'COLUMN' , 'Dt_Inclusao' 
 GO
 
-ALTER TABLE TNFe_infNFe_det_imposto_PIS ADD CONSTRAINT TNFe_infNFe_det_imposto_PIS_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa)
+ALTER TABLE TNFe_infNFe_det_imposto_PIS ADD CONSTRAINT TNFe_infNFe_det_imposto_PIS_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa, nItem)
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
@@ -1926,6 +1889,113 @@ ALTER TABLE TSS_Log ADD CONSTRAINT TSS_Log_PK PRIMARY KEY CLUSTERED (Id_Log)
      ALLOW_ROW_LOCKS = ON )
      ON "default" 
     GO
+
+
+
+CREATE TABLE TNFe_total_ISSQNtot 
+    (
+     Id_Arquivo BIGINT NOT NULL , 
+     Id_Empresa INTEGER NOT NULL , 
+     vServ DECIMAL (15,2) , 
+     vBC DECIMAL (15,2) , 
+     vISS DECIMAL (15,2) , 
+     vPIS DECIMAL (15,2) , 
+     vCOFINS DECIMAL (15,2) , 
+     dCompet SMALLDATETIME , 
+     vDeducao DECIMAL (15,2) , 
+     vOutro DECIMAL (15,2) , 
+     vDescIncond DECIMAL (15,2) , 
+     vDescCond DECIMAL (15,2) , 
+     vISSRet DECIMAL (15,2) , 
+     cRegTrib TINYINT , 
+     Dt_Inclusao DATETIME NOT NULL 
+    )
+    ON "default"
+GO 
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vServ' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Base de Cálculo do ISS' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vBC' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor Total do ISS' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vISS' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor do PIS sobre serviços' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vPIS' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor do COFINS sobre serviço' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vCOFINS' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Data da prestação do serviço  (AAAA-MM-DD)' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'dCompet' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor dedução para redução da base de cálculo' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vDeducao' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor outras retenções' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vOutro' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor desconto incondicionado' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vDescIncond' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor desconto condicionado' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vDescCond' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Valor Total Retenção ISS' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'vISSRet' 
+GO
+
+
+
+EXEC sp_addextendedproperty 'MS_Description' , 'Código do regime especial de tributação' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_total_ISSQNtot' , 'COLUMN' , 'cRegTrib' 
+GO
+
+    
+ALTER TABLE TNFe_total_ISSQNtot ADD CONSTRAINT TNFe_total_ISSQNtot_PK PRIMARY KEY CLUSTERED (Id_Arquivo, Id_Empresa)
+     WITH (
+     ALLOW_PAGE_LOCKS = ON , 
+     ALLOW_ROW_LOCKS = ON )
+     ON "default" 
+    GO
+
+ALTER TABLE TNFe_total_ISSQNtot 
+    ADD CONSTRAINT TNFe_total_ISSQNtot_TSS_Arquivo_FK FOREIGN KEY 
+    ( 
+     Id_Arquivo, 
+     Id_Empresa
+    ) 
+    REFERENCES TSS_Arquivo 
+    ( 
+     Id_Arquivo , 
+     Id_Empresa 
+    ) 
+    ON DELETE NO ACTION 
+    ON UPDATE NO ACTION 
+GO 
+
 
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
