@@ -37,7 +37,7 @@ BEGIN
         SET NOCOUNT ON 
         
         DECLARE @COD_ERRO            INT         -- VARIÁVEL COM O RETORNO DE ERRO   
-              , @DESC_ERRO           VARCHAR(800)-- VARIÁVEL COM A DESCRICAO DO ERRO   
+              , @DESC_ERRO           VARCHAR(MAX)-- VARIÁVEL COM A DESCRICAO DO ERRO   
               , @INT_RET_PROC        INT         -- VARIÁVEL COM O CÓDIGO DE RETORNO DE ERRO DE PROCS 
               , @Ds_Log              VARCHAR(MAX)        -- VARIÁVEL COM A DESCRIÇÃO DO LOG 
         

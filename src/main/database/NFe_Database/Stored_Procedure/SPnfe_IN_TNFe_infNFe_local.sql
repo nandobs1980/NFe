@@ -4,9 +4,9 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_retirada_entrega'))
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_local'))
 BEGIN
-    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_retirada_entrega
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_local
 END
 GO
 /********************************************************************************************************************** 
@@ -20,17 +20,16 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_retirada_entrega ( @Id_Arquivo             BIGINT 
-                                                          , @Id_Empresa             INTEGER 
-                                                          , @Id_Retirada_Entrega    CHAR (1)  
-                                                          , @Id_Doc                 DECIMAL (14)  
-                                                          , @xLgr                   VARCHAR (60)  
-                                                          , @nro                    VARCHAR (60)  
-                                                          , @xCpl                   VARCHAR (60)  
-                                                          , @xBairro                VARCHAR (60)  
-                                                          , @cMun                   DECIMAL (7) 
-                                                          , @xMun                   VARCHAR (60)  
-                                                          , @UF                     CHAR (2) )
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_local ( @Id_Arquivo             BIGINT 
+                                                , @Tp_Local               CHAR (1)  
+                                                , @Id_Doc                 DECIMAL (14)  
+                                                , @xLgr                   VARCHAR (60)  
+                                                , @nro                    VARCHAR (60)  
+                                                , @xCpl                   VARCHAR (60)  
+                                                , @xBairro                VARCHAR (60)  
+                                                , @cMun                   DECIMAL (7) 
+                                                , @xMun                   VARCHAR (60)  
+                                                , @UF                     CHAR (2) )
 
 AS 
 BEGIN 
@@ -53,10 +52,10 @@ BEGIN
             GOTO TRATA_ERRO   
         END  
 
-        INSERT INTO dbo.TNFe_infNFe_retirada_entrega 
+        INSERT INTO dbo.TNFe_infNFe_local 
                   ( Id_Arquivo
                   , Id_Empresa
-                  , Id_Retirada_Entrega
+                  , Tp_Local
                   , Id_Doc
                   , xLgr
                   , nro 
@@ -68,7 +67,7 @@ BEGIN
                   , Dt_Inclusao)
            VALUES ( @Id_Arquivo
                   , @Id_Empresa
-                  , @Id_Retirada_Entrega
+                  , @Tp_Local
                   , @Id_Doc
                   , @xLgr
                   , @nro 
@@ -89,7 +88,7 @@ BEGIN
       
 TRATA_ERRO:       
 
-   SET @DESC_ERRO = '**TNFe_infNFe_retirada_entrega** - ' + @DESC_ERRO       
+   SET @DESC_ERRO = '**SPnfe_IN_TNFe_infNFe_local** - ' + @DESC_ERRO       
    RAISERROR (@DESC_ERRO,16,1)       
    RETURN @COD_ERRO + @INT_RET_PROC       
 END    

@@ -20,23 +20,24 @@ GO
  Responsável....... :          
  Motivo............ :   
  **********************************************************************************************************************/ 
-CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN ( @Id_Arquivo    BIGINT 
-                                                           , @vBC           DECIMAL (15,2)  
-                                                           , @vAliq         DECIMAL (7,4) 
-                                                           , @vISSQN        DECIMAL (15,2)  
-                                                           , @cMunFG        DECIMAL (7)  
-                                                           , @cListServ     DECIMAL (4,2)  
-                                                           , @vDeducao      DECIMAL (15,2)  
-                                                           , @vOutro        DECIMAL (15,2)  
-                                                           , @vDescIncond   DECIMAL (15,2)  
-                                                           , @vDescCond     DECIMAL (15,2)  
-                                                           , @vISSRet       DECIMAL (15,2)  
-                                                           , @indISS        TINYINT  
-                                                           , @cServico      VARCHAR (20)  
-                                                           , @cMun          DECIMAL (7)  
-                                                           , @cPais         DECIMAL (4)  
-                                                           , @nProcesso     VARCHAR (30)  
-                                                           , @indIncentivo  TINYINT )
+CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_ISSQN ( @Id_Arquivo   BIGINT 
+                                                            , @nItem         INTEGER
+                                                            , @vBC          DECIMAL (15,2)  
+                                                            , @vAliq        DECIMAL (7,4) 
+                                                            , @vISSQN       DECIMAL (15,2)  
+                                                            , @cMunFG       DECIMAL (7)  
+                                                            , @cListServ    DECIMAL (4,2)  
+                                                            , @vDeducao     DECIMAL (15,2)  
+                                                            , @vOutro       DECIMAL (15,2)  
+                                                            , @vDescIncond  DECIMAL (15,2)  
+                                                            , @vDescCond    DECIMAL (15,2)  
+                                                            , @vISSRet      DECIMAL (15,2)  
+                                                            , @indISS       TINYINT  
+                                                            , @cServico     VARCHAR (20)  
+                                                            , @cMun         DECIMAL (7)  
+                                                            , @cPais        DECIMAL (4)  
+                                                            , @nProcesso    VARCHAR (30)  
+                                                            , @indIncentivo TINYINT )
 
 AS 
 BEGIN 
@@ -62,6 +63,7 @@ BEGIN
         INSERT INTO dbo.TNFe_infNFe_det_imposto_ISSQN 
                   ( Id_Arquivo
                   , Id_Empresa
+                  , nItem
                   , vBC       
                   , vAliq     
                   , vISSQN    
@@ -81,6 +83,7 @@ BEGIN
                   , Dt_Inclusao)
            VALUES ( @Id_Arquivo
                   , @Id_Empresa
+                  , @nItem
                   , @vBC       
                   , @vAliq     
                   , @vISSQN    

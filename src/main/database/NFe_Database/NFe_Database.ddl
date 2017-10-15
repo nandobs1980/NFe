@@ -7,6 +7,71 @@ use nfe
 go
 
 /*
+
+ALTER TABLE TNFe_dest 
+    DROP CONSTRAINT TNFe_dest_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_prod_detExport 
+    DROP CONSTRAINT TNFe_detExport_TNFe_infNFe_det_prod_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_avulsa 
+    DROP CONSTRAINT TNFe_infNFe_avulsa_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_imposto_COFINS 
+    DROP CONSTRAINT TNFe_infNFe_det_imposto_COFINS_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_imposto_ICMS 
+    DROP CONSTRAINT TNFe_infNFe_det_imposto_ICMS_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_imposto_IPI 
+    DROP CONSTRAINT TNFe_infNFe_det_imposto_IPI_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_imposto_ISSQN 
+    DROP CONSTRAINT TNFe_infNFe_det_imposto_ISSQN_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_imposto_PIS 
+    DROP CONSTRAINT TNFe_infNFe_det_imposto_PIS_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_prod_DI 
+    DROP CONSTRAINT TNFe_infNFe_det_prod_DI_TNFe_infNFe_det_prod_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_prod 
+    DROP CONSTRAINT TNFe_infNFe_det_prod_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_emit 
+    DROP CONSTRAINT TNFe_infNFe_emit_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_ide 
+    DROP CONSTRAINT TNFe_infNFe_ide_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_infNFe_det_prod_rastro 
+    DROP CONSTRAINT TNFe_rastro_TNFe_infNFe_det_prod_FK 
+GO
+
+ALTER TABLE TNFe_total_ICMSTot 
+    DROP CONSTRAINT TNFe_total_ICMSTot_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TNFe_total_ISSQNtot 
+    DROP CONSTRAINT TNFe_total_ISSQNtot_TSS_Arquivo_FK 
+GO
+
+ALTER TABLE TSS_Arquivo 
+    DROP CONSTRAINT TSS_Arquivos_TSS_Empresa_FK 
+GO
+
 drop TABLE
 tnfe_dest
 
@@ -28,15 +93,6 @@ tnfe_infnfe_det_imposto_issqn
 drop TABLE
 tnfe_infnfe_det_imposto_pis
 
-ALTER TABLE TNFe_infNFe_det_prod_detExport 
-    DROP CONSTRAINT TNFe_detExport_TNFe_infNFe_det_prod_FK 
-
-ALTER TABLE TNFe_infNFe_det_prod_DI 
-    DROP CONSTRAINT TNFe_infNFe_det_prod_DI_TNFe_infNFe_det_prod_FK 
-
-ALTER TABLE TNFe_infNFe_det_prod_rastro 
-    DROP CONSTRAINT TNFe_rastro_TNFe_infNFe_det_prod_FK 
-
 DROP TABLE TNFe_infNFe_det_prod
 
 drop TABLE
@@ -55,7 +111,7 @@ drop TABLE
 tnfe_infnfe_ide
 
 drop TABLE
-tnfe_infnfe_retirada_entrega
+TNFe_infNFe_local
 
 drop TABLE
 tnfe_total_icmstot
@@ -63,6 +119,10 @@ tnfe_total_icmstot
 DROP TABLE TSS_Arquivo
 
 DROP TABLE TSS_Empresa
+
+DROP TABLE TSS_Log
+
+DROP TABLE TNFe_total_ISSQNtot
 */
 
 CREATE TABLE TNFe_dest 
@@ -83,9 +143,9 @@ CREATE TABLE TNFe_dest
      xPais VARCHAR (60) , 
      fone DECIMAL (14) , 
      indIEDest SMALLINT , 
-     IE VARCHAR (14) , 
+     IE DECIMAL (14) , 
      ISUF VARCHAR (9) , 
-     IM VARCHAR (15) , 
+     IM DECIMAL (15) , 
      email VARCHAR (60) , 
      Dt_Inclusao DATETIME 
     )
@@ -1054,7 +1114,7 @@ CREATE TABLE TNFe_infNFe_emit
      cPais SMALLINT , 
      xPais CHAR (6) , 
      fone VARCHAR (14) , 
-     IE VARCHAR (14) , 
+     IE DECIMAL (14) , 
      IEST DECIMAL (14) , 
      IM DECIMAL (15) , 
      CNAE DECIMAL (7) , 
@@ -1361,11 +1421,11 @@ ALTER TABLE TNFe_infNFe_ide ADD CONSTRAINT TNFe_infNFe_ide_PK PRIMARY KEY CLUSTE
      ON "default" 
     GO
 
-CREATE TABLE TNFe_infNFe_retirada_entrega 
+CREATE TABLE TNFe_infNFe_local 
     (
      Id_Arquivo BIGINT NOT NULL , 
      Id_Empresa INTEGER NOT NULL , 
-     Id_Retirada_Entrega CHAR (1) NOT NULL , 
+     Tp_Local CHAR (1) NOT NULL , 
      Id_Doc DECIMAL (14) , 
      xLgr VARCHAR (60) , 
      nro VARCHAR (60) , 
@@ -1382,45 +1442,45 @@ GO
 
 
 EXEC sp_addextendedproperty 'MS_Description' , 'e = entrega
-r = retirada' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'Id_Retirada_Entrega' 
+r = retirada' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'Tp_Local' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'CNPJ ou CPF (v2.0)' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'Id_Doc' 
+EXEC sp_addextendedproperty 'MS_Description' , 'CNPJ ou CPF (v2.0)' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'Id_Doc' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Logradouro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'xLgr' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Logradouro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'xLgr' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Número' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'nro' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Número' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'nro' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Complemento' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'xCpl' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Complemento' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'xCpl' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Bairro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'xBairro' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Bairro' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'xBairro' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Código do município (utilizar a tabela do IBGE)' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'cMun' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Código do município (utilizar a tabela do IBGE)' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'cMun' 
 GO
 
 
 
-EXEC sp_addextendedproperty 'MS_Description' , 'Nome do município' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_retirada_entrega' , 'COLUMN' , 'xMun' 
+EXEC sp_addextendedproperty 'MS_Description' , 'Nome do município' , 'USER' , 'dbo' , 'TABLE' , 'TNFe_infNFe_local' , 'COLUMN' , 'xMun' 
 GO
 
-ALTER TABLE TNFe_infNFe_retirada_entrega ADD CONSTRAINT TNFe_infNFe_retirada_entrega_PK PRIMARY KEY CLUSTERED (Id_Empresa, Id_Arquivo)
+ALTER TABLE TNFe_infNFe_local ADD CONSTRAINT TNFe_infNFe_local_PK PRIMARY KEY CLUSTERED (Id_Empresa, Id_Arquivo)
      WITH (
      ALLOW_PAGE_LOCKS = ON , 
      ALLOW_ROW_LOCKS = ON )
@@ -1806,8 +1866,8 @@ ALTER TABLE TNFe_infNFe_ide
     ON UPDATE NO ACTION 
 GO
 
-ALTER TABLE TNFe_infNFe_retirada_entrega 
-    ADD CONSTRAINT TNFe_infNFe_retirada_entrega_TSS_Arquivo_FK FOREIGN KEY 
+ALTER TABLE TNFe_infNFe_local 
+    ADD CONSTRAINT TNFe_infNFe_local_TSS_Arquivo_FK FOREIGN KEY 
     ( 
      Id_Arquivo, 
      Id_Empresa

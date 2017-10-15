@@ -35,7 +35,7 @@ CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_emit    ( @Id_Arquivo  BIGINT
                                                  , @cPais       SMALLINT 
                                                  , @xPais       CHAR (6)
                                                  , @fone        VARCHAR (14)
-                                                 , @IE          VARCHAR (14) 
+                                                 , @IE          DECIMAL (14) 
                                                  , @IEST        DECIMAL (14)
                                                  , @IM          DECIMAL (15) 
                                                  , @CNAE        DECIMAL (7)

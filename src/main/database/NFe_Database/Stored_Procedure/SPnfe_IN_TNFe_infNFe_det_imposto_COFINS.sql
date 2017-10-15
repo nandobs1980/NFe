@@ -21,7 +21,7 @@ GO
  Motivo............ :   
  **********************************************************************************************************************/ 
 CREATE PROCEDURE dbo.SPnfe_IN_TNFe_infNFe_det_imposto_COFINS ( @Id_Arquivo    BIGINT
-                                                            , @Tp_CONFINS    VARCHAR (10) 
+                                                            , @Tp_COFINS    VARCHAR (10) 
                                                             , @CST           CHAR (2) 
                                                             , @vBC           DECIMAL (15,2)
                                                             , @pCOFINS       DECIMAL (7,4)
@@ -53,7 +53,7 @@ BEGIN
         INSERT INTO dbo.TNFe_infNFe_det_imposto_COFINS 
                   ( Id_Arquivo
                   , Id_Empresa
-                  , Tp_CONFINS
+                  , Tp_COFINS
                   , CST
                   , vBC
                   , pCOFINS
@@ -63,7 +63,7 @@ BEGIN
                   , Dt_Inclusao )
            VALUES ( @Id_Arquivo  
                   , @Id_Empresa  
-                  , @Tp_CONFINS
+                  , @Tp_COFINS
                   , @CST
                   , @vBC
                   , @pCOFINS

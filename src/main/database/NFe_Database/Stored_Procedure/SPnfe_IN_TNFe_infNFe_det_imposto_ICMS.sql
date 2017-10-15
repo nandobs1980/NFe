@@ -4,9 +4,9 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON 
 GO
-IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_det_imposto_IPI'))
+IF EXISTS(SELECT 1 FROM SYSOBJECTS WHERE ID = OBJECT_ID('SPnfe_IN_TNFe_infNFe_det_imposto_ICMS'))
 BEGIN
-    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_det_imposto_IPI
+    DROP PROCEDURE SPnfe_IN_TNFe_infNFe_det_imposto_ICMS
 END
 GO
 /********************************************************************************************************************** 
