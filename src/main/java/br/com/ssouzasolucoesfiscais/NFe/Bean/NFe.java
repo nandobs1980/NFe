@@ -11,7 +11,7 @@ public class NFe {
 	private Avulsa avulsa = new Avulsa();
 	private List<Prod> list_prod = new ArrayList<Prod>(); 
 	private ICMSTot icmsTot = new ICMSTot();
-	private ISSQNtot issqnTot = new ISSQNtot();
+	private ISSQNTot issqnTot = new ISSQNTot();
 	public Ide getIde() {
 		return ide;
 	}
@@ -48,10 +48,10 @@ public class NFe {
 	public void setIcmsTot(ICMSTot icmsTot) {
 		this.icmsTot = icmsTot;
 	}
-	public ISSQNtot getIssqnTot() {
+	public ISSQNTot getIssqnTot() {
 		return issqnTot;
 	}
-	public void setIssqnTot(ISSQNtot issqnTot) {
+	public void setIssqnTot(ISSQNTot issqnTot) {
 		this.issqnTot = issqnTot;
 	}
 }

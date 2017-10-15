@@ -16,9 +16,9 @@ public class Emit {
     private byte cPais; 
     private String xPais; 
     private String fone; 
-	private String ie;
-	private String iest;
-	private String im;
+	private int ie;
+	private int iest;
+	private int im;
 	private int cnae;
 	private byte crt;
 	public String getId_Doc() {
@@ -105,22 +105,22 @@ public class Emit {
 	public void setFone(String fone) {
 		this.fone = fone;
 	}
-	public String getIe() {
+	public int getIe() {
 		return ie;
 	}
-	public void setIe(String ie) {
+	public void setIe(int ie) {
 		this.ie = ie;
 	}
-	public String getIest() {
+	public int getIest() {
 		return iest;
 	}
-	public void setIest(String iest) {
+	public void setIest(int iest) {
 		this.iest = iest;
 	}
-	public String getIm() {
+	public int getIm() {
 		return im;
 	}
-	public void setIm(String im) {
+	public void setIm(int im) {
 		this.im = im;
 	}
 	public int getCnae() {
