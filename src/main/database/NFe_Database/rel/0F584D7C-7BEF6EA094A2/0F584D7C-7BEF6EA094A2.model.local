@@ -3919,6 +3919,170 @@
 <colAssociation fkAssociation="8A938750-32B9-B60D-15E6-2D776011EDE6" referredColumn="0180DAAE-F26B-5C92-953A-FF400B838962"/>
 </associations>
 </Column>
+<Column name="vServ" id="FB566989-0E76-62C8-29FD-813F8DE153AE">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:38:16 UTC</createdTime>
+<commentInRDBMS>Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vBC" id="71E4D761-DD39-2590-0216-FF56175FAA85">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:38:42 UTC</createdTime>
+<commentInRDBMS>Base de Cálculo do ISS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vISS" id="FFFF5606-1B88-3E60-42C7-442DD3F998A5">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:39:19 UTC</createdTime>
+<commentInRDBMS>Valor Total do ISS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vPIS" id="606A71C9-5C89-BB82-FA49-6CD41666B022">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:39:42 UTC</createdTime>
+<commentInRDBMS>Valor do PIS sobre serviços</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vCOFINS" id="E982D4B9-E637-9668-5FEB-B6BC55C91977">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:40:08 UTC</createdTime>
+<commentInRDBMS>Valor do COFINS sobre serviço</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dCompet" id="A63FF744-502D-6BB4-EA7F-962EE13D0996">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:40:29 UTC</createdTime>
+<commentInRDBMS>Data da prestação do serviço  (AAAA-MM-DD)</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT038</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vDeducao" id="5D21EEEC-FF26-8329-E41D-AD6AB4738363">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:40:49 UTC</createdTime>
+<commentInRDBMS>Valor dedução para redução da base de cálculo</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vOutro" id="272632EA-05EF-E9A7-C556-F4F47355E585">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:41:14 UTC</createdTime>
+<commentInRDBMS>Valor outras retenções</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vDescIncond" id="4DFF50FD-7B67-A3B1-F028-044D8B3FDA10">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:41:39 UTC</createdTime>
+<commentInRDBMS>Valor desconto incondicionado</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vDescCond" id="0212494A-4B7E-FE8A-C532-F8DBAC5DA609">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:42:03 UTC</createdTime>
+<commentInRDBMS>Valor desconto condicionado</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vISSRet" id="1D8B6C99-4A6F-9348-473E-CB893B619ADF">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:42:31 UTC</createdTime>
+<commentInRDBMS>Valor Total Retenção ISS</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT026</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,15,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cRegTrib" id="DECF7F74-8137-8DC5-030F-F5BFC8E73705">
+<createdBy>fernandosouza</createdBy>
+<createdTime>2017-10-15 00:43:02 UTC</createdTime>
+<commentInRDBMS>Código do regime especial de tributação</commentInRDBMS>
+<ownerDesignName>NFe_Database</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT042</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 <Column name="Dt_Inclusao" id="3DFBAEDB-FB0F-732C-4546-FE8FF4BF5564">
 <createdBy>fernandosouza</createdBy>
 <createdTime>2017-10-15 00:22:23 UTC</createdTime>
