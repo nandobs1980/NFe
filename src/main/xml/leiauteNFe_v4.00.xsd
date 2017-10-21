@@ -4,11 +4,7 @@
 <!-- PL_008g  alterações de esquema decorrentes da - NT2015.002  - 15/07/2015 -->
 <!-- PL_008h  alterações de esquema decorrentes da - NT2015.003 - 17/09/2015 -->
 <!-- PL_008i -->
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.portalfiscal.inf.br/nfe" 
-	xmlns="http://www.portalfiscal.inf.br/nfe" 
-	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" 
-	xmlns:editix="http://www.portalfiscal.inf.br/nfe" 
-	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.portalfiscal.inf.br/nfe" xmlns="http://www.portalfiscal.inf.br/nfe" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:editix="http://www.portalfiscal.inf.br/nfe" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema_v1.01.xsd"/>
 	<xs:include schemaLocation="tiposBasico_v4.00.xsd"/>
 	<xs:complexType name="TNFe">
@@ -62,7 +58,12 @@
 									</xs:element>
 									<xs:element name="serie" type="TSerie">
 										<xs:annotation>
-											<xs:documentation>												Série do Documento Fiscal												série normal 0-889												Avulsa Fisco 890-899												SCAN 900-999											</xs:documentation>
+											<xs:documentation>
+												Série do Documento Fiscal
+												série normal 0-889
+												Avulsa Fisco 890-899
+												SCAN 900-999
+											</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="nNF" type="TNF">
@@ -112,7 +113,8 @@
 									</xs:element>
 									<xs:element name="tpImp">
 										<xs:annotation>
-											<xs:documentation>Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe Paisagem;3-DANFe Simplificado;											4-DANFe NFC-e;5-DANFe NFC-e em mensagem eletrônica)</xs:documentation>
+											<xs:documentation>Formato de impressão do DANFE (0-sem DANFE;1-DANFe Retrato; 2-DANFe Paisagem;3-DANFe Simplificado;
+											4-DANFe NFC-e;5-DANFe NFC-e em mensagem eletrônica)</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -128,7 +130,17 @@
 									</xs:element>
 									<xs:element name="tpEmis">
 										<xs:annotation>
-											<xs:documentation>												Forma de emissão da NF-e												1 - Normal;												2 - Contingência FS												3 - Contingência SCAN												4 - Contingência DPEC												5 - Contingência FSDA												6 - Contingência SVC - AN												7 - Contingência SVC - RS												9 - Contingência off-line NFC-e											</xs:documentation>
+											<xs:documentation>
+												Forma de emissão da NF-e
+												1 - Normal;
+												2 - Contingência FS
+												3 - Contingência SCAN
+												4 - Contingência DPEC
+												5 - Contingência FSDA
+												6 - Contingência SVC - AN
+												7 - Contingência SVC - RS
+												9 - Contingência off-line NFC-e
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -157,12 +169,22 @@
 									</xs:element>
 									<xs:element name="tpAmb" type="TAmb">
 										<xs:annotation>
-											<xs:documentation>												Identificação do Ambiente:												1 - Produção												2 - Homologação											</xs:documentation>
+											<xs:documentation>
+												Identificação do Ambiente:
+												1 - Produção
+												2 - Homologação
+											</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="finNFe" type="TFinNFe">
 										<xs:annotation>
-											<xs:documentation>												Finalidade da emissão da NF-e:												1 - NFe normal												2 - NFe complementar												3 - NFe de ajuste												4 - Devolução/Retorno											</xs:documentation>
+											<xs:documentation>
+												Finalidade da emissão da NF-e:
+												1 - NFe normal
+												2 - NFe complementar
+												3 - NFe de ajuste
+												4 - Devolução/Retorno
+											</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="indFinal">
@@ -179,7 +201,8 @@
 									</xs:element>
 									<xs:element name="indPres">
 										<xs:annotation>
-											<xs:documentation>Indicador de presença do comprador no estabelecimento comercial no momento da oepração											(0-Não se aplica (ex.: Nota Fiscal complementar ou de ajuste;1-Operação presencial;2-Não presencial, internet;3-Não presencial, teleatendimento;4-NFC-e entrega em domicílio;5-Operação presencial, fora do estabelecimento;9-Não presencial, outros)</xs:documentation>
+											<xs:documentation>Indicador de presença do comprador no estabelecimento comercial no momento da oepração
+											(0-Não se aplica (ex.: Nota Fiscal complementar ou de ajuste;1-Operação presencial;2-Não presencial, internet;3-Não presencial, teleatendimento;4-NFC-e entrega em domicílio;5-Operação presencial, fora do estabelecimento;9-Não presencial, outros)</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -196,12 +219,20 @@
 									</xs:element>
 									<xs:element name="procEmi" type="TProcEmi">
 										<xs:annotation>
-											<xs:documentation>												Processo de emissão utilizado com a seguinte codificação:												0 - emissão de NF-e com aplicativo do contribuinte;												1 - emissão de NF-e avulsa pelo Fisco;												2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site												do Fisco;												3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.											</xs:documentation>
+											<xs:documentation>
+												Processo de emissão utilizado com a seguinte codificação:
+												0 - emissão de NF-e com aplicativo do contribuinte;
+												1 - emissão de NF-e avulsa pelo Fisco;
+												2 - emissão de NF-e avulsa, pelo contribuinte com seu certificado digital, através do site
+												do Fisco;
+												3- emissão de NF-e pelo contribuinte com aplicativo fornecido pelo Fisco.
+											</xs:documentation>
 										</xs:annotation>
 									</xs:element>
 									<xs:element name="verProc">
 										<xs:annotation>
-											<xs:documentation>versão do aplicativo utilizado no processo de emissão											</xs:documentation>
+											<xs:documentation>versão do aplicativo utilizado no processo de emissão
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="TString">
@@ -497,7 +528,13 @@
 									</xs:sequence>
 									<xs:element name="CRT">
 										<xs:annotation>
-											<xs:documentation>												Código de Regime Tributário. 												Este campo será obrigatoriamente preenchido com:												1 – Simples Nacional;												2 – Simples Nacional – excesso de sublimite de receita bruta;												3 – Regime Normal.											</xs:documentation>
+											<xs:documentation>
+												Código de Regime Tributário. 
+												Este campo será obrigatoriamente preenchido com:
+												1 – Simples Nacional;
+												2 – Simples Nacional – excesso de sublimite de receita bruta;
+												3 – Regime Normal.
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -658,7 +695,12 @@
 									</xs:element>
 									<xs:element name="indIEDest">
 										<xs:annotation>
-											<xs:documentation>												Indicador da IE do destinatário:												1 – Contribuinte ICMSpagamento à vista;												2 – Contribuinte isento de inscrição;												9 – Não Contribuinte											</xs:documentation>
+											<xs:documentation>
+												Indicador da IE do destinatário:
+												1 – Contribuinte ICMSpagamento à vista;
+												2 – Contribuinte isento de inscrição;
+												9 – Não Contribuinte
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -698,7 +740,9 @@
 									</xs:element>
 									<xs:element minOccurs="0" name="email">
 										<xs:annotation>
-											<xs:documentation>Informar o e-mail do destinatário. 																O campo pode ser utilizado para informar o e-mail de recepção da NF-e indicada pelo destinatário											</xs:documentation>
+											<xs:documentation>Informar o e-mail do destinatário. 
+																O campo pode ser utilizado para informar o e-mail de recepção da NF-e indicada pelo destinatário
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="TString">
@@ -754,7 +798,9 @@
 											<xs:sequence>
 												<xs:element name="cProd">
 													<xs:annotation>
-														<xs:documentation>Código do produto ou serviço. 																			Preencher com CFOP caso se trate de itens não relacionados com mercadorias/produto e que o contribuinte não possua codificação própria Formato ”CFOP9999”.														</xs:documentation>
+														<xs:documentation>Código do produto ou serviço. 
+																			Preencher com CFOP caso se trate de itens não relacionados com mercadorias/produto e que o contribuinte não possua codificação própria Formato ”CFOP9999”.
+														</xs:documentation>
 													</xs:annotation>
 													<xs:simpleType>
 														<xs:restriction base="TString">
@@ -942,7 +988,11 @@
 												</xs:element>
 												<xs:element name="indTot">
 													<xs:annotation>
-														<xs:documentation>															Este campo deverá ser preenchido com:															0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)															1  – o valor do item (vProd) compõe o valor total da NF-e (vProd)														</xs:documentation>
+														<xs:documentation>
+															Este campo deverá ser preenchido com:
+															0 – o valor do item (vProd) não compõe o valor total da NF-e (vProd)
+															1  – o valor do item (vProd) compõe o valor total da NF-e (vProd)
+														</xs:documentation>
 													</xs:annotation>
 													<xs:simpleType>
 														<xs:restriction base="xs:string">
@@ -954,7 +1004,9 @@
 												</xs:element>
 												<xs:element maxOccurs="100" minOccurs="0" name="DI">
 													<xs:annotation>
-														<xs:documentation>															Delcaração de Importação (NT 2011/004)														</xs:documentation>
+														<xs:documentation>
+															Delcaração de Importação (NT 2011/004)
+														</xs:documentation>
 													</xs:annotation>
 													<xs:complexType>
 														<xs:sequence>
@@ -997,7 +1049,8 @@
 															</xs:element>
 															<xs:element name="tpViaTransp">
 																<xs:annotation>
-																	<xs:documentation>Via de transporte internacional informada na DI																	1-Maritima;2-Fluvial;3-Lacustre;4-Aerea;5-Postal;6-Ferroviaria;7-Rodoviaria;8-Conduto;9-Meios Proprios;10-Entrada/Saida Ficta.</xs:documentation>
+																	<xs:documentation>Via de transporte internacional informada na DI
+																	1-Maritima;2-Fluvial;3-Lacustre;4-Aerea;5-Postal;6-Ferroviaria;7-Rodoviaria;8-Conduto;9-Meios Proprios;10-Entrada/Saida Ficta.</xs:documentation>
 																</xs:annotation>
 																<xs:simpleType>
 																	<xs:restriction base="xs:string">
@@ -1024,7 +1077,8 @@
 															</xs:element>
 															<xs:element name="tpIntermedio">
 																<xs:annotation>
-																	<xs:documentation>Forma de Importação quanto a intermediação 																	1-por conta propria;2-por conta e ordem;3-encomenda</xs:documentation>
+																	<xs:documentation>Forma de Importação quanto a intermediação 
+																	1-por conta propria;2-por conta e ordem;3-encomenda</xs:documentation>
 																</xs:annotation>
 																<xs:simpleType>
 																	<xs:restriction base="xs:string">
@@ -1446,7 +1500,11 @@
 																</xs:element>
 																<xs:element name="VIN">
 																	<xs:annotation>
-																		<xs:documentation>																			Informa-se o veículo tem VIN (chassi) remarcado.																			R-Remarcado																			N-NormalVIN																		</xs:documentation>
+																		<xs:documentation>
+																			Informa-se o veículo tem VIN (chassi) remarcado.
+																			R-Remarcado
+																			N-NormalVIN
+																		</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="TString">
@@ -1482,7 +1540,11 @@
 																</xs:element>
 																<xs:element name="cCorDENATRAN">
 																	<xs:annotation>
-																		<xs:documentation>																			Código da Cor Segundo as regras de pré-cadastro do DENATRAN: 																			01-AMARELO;02-AZUL;03-BEGE;04-BRANCA;05-CINZA;06-DOURADA;07-GRENA 																			08-LARANJA;09-MARROM;10-PRATA;11-PRETA;12-ROSA;13-ROXA;14-VERDE;15-VERMELHA;16-FANTASIA																		</xs:documentation>
+																		<xs:documentation>
+																			Código da Cor Segundo as regras de pré-cadastro do DENATRAN: 
+																			01-AMARELO;02-AZUL;03-BEGE;04-BRANCA;05-CINZA;06-DOURADA;07-GRENA 
+																			08-LARANJA;09-MARROM;10-PRATA;11-PRETA;12-ROSA;13-ROXA;14-VERDE;15-VERMELHA;16-FANTASIA
+																		</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -1508,7 +1570,15 @@
 																</xs:element>
 																<xs:element name="tpRest">
 																	<xs:annotation>
-																		<xs:documentation>																			Restrição																			0 - Não há;																			1 - Alienação Fiduciária;																			2 - Arrendamento Mercantil;																			3 - Reserva de Domínio;																			4 - Penhor de Veículos;																			9 - outras.																		</xs:documentation>
+																		<xs:documentation>
+																			Restrição
+																			0 - Não há;
+																			1 - Alienação Fiduciária;
+																			2 - Arrendamento Mercantil;
+																			3 - Reserva de Domínio;
+																			4 - Penhor de Veículos;
+																			9 - outras.
+																		</xs:documentation>
 																	</xs:annotation>
 																	<xs:simpleType>
 																		<xs:restriction base="xs:string">
@@ -1664,7 +1734,15 @@
 																</xs:element>
 																<xs:element minOccurs="0" name="qTemp" type="TDec_1204temperatura">
 																	<xs:annotation>
-																		<xs:documentation>																			Quantidade de combustível																			faturada à temperatura ambiente.																			Informar quando a quantidade																			faturada informada no campo																			qCom (I10) tiver sido ajustada para																			uma temperatura diferente da																			ambiente.																		</xs:documentation>
+																		<xs:documentation>
+																			Quantidade de combustível
+																			faturada à temperatura ambiente.
+																			Informar quando a quantidade
+																			faturada informada no campo
+																			qCom (I10) tiver sido ajustada para
+																			uma temperatura diferente da
+																			ambiente.
+																		</xs:documentation>
 																	</xs:annotation>
 																</xs:element>
 																<xs:element name="UFCons" type="TUf">
@@ -1788,18 +1866,26 @@
 																<xs:choice>
 																	<xs:element name="ICMS00">
 																		<xs:annotation>
-																			<xs:documentation>																				Tributação pelo ICMS 00 - Tributada integralmente</xs:documentation>
+																			<xs:documentation>
+																				Tributação pelo ICMS 00 - Tributada integralmente</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>																							origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>
+																							origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>																							Tributção pelo ICMS																							00 - Tributada integralmente																						</xs:documentation>
+																						<xs:documentation>
+																							Tributção pelo ICMS
+																							00 - Tributada integralmente
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -1810,7 +1896,13 @@
 																				</xs:element>
 																				<xs:element name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>																							Modalidade de determinação da BC do ICMS:																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>
+																							Modalidade de determinação da BC do ICMS:
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -1854,13 +1946,20 @@
 																	</xs:element>
 																	<xs:element name="ICMS10">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS 																								10 - Tributada e com cobrança do ICMS por substituição tributária																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS 
+																								10 - Tributada e com cobrança do ICMS por substituição tributária
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>																							origem da mercadoria: 																								0 - Nacional 																								1 - Estrangeira - Importação direta 																								2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>
+																							origem da mercadoria: 
+																								0 - Nacional 
+																								1 - Estrangeira - Importação direta 
+																								2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
@@ -1876,7 +1975,13 @@
 																				</xs:element>
 																				<xs:element name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>																							Modalidade de determinação da BC do ICMS:																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>
+																							Modalidade de determinação da BC do ICMS:
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -1922,7 +2027,14 @@
 																				</xs:sequence>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor);																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor);
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -1983,18 +2095,26 @@
 																	</xs:element>
 																	<xs:element name="ICMS20">
 																		<xs:annotation>
-																			<xs:documentation>Tributção pelo ICMS																								20 - Com redução de base de cálculo																			</xs:documentation>
+																			<xs:documentation>Tributção pelo ICMS
+																								20 - Com redução de base de cálculo
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 																							0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 
+																							0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																							20 - Com redução de base de cálculo																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																							20 - Com redução de base de cálculo
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2005,7 +2125,13 @@
 																				</xs:element>
 																				<xs:element name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>																							Modalidade de determinação da BC do ICMS:																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>
+																							Modalidade de determinação da BC do ICMS:
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2082,18 +2208,26 @@
 																	</xs:element>
 																	<xs:element name="ICMS30">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS																								30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS
+																								30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 																										0 - Nacional 																										1 - Estrangeira - Importação direta 																										2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 
+																										0 - Nacional 
+																										1 - Estrangeira - Importação direta 
+																										2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																											30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																											30 - Isenta ou não tributada e com cobrança do ICMS por substituição tributária
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2104,7 +2238,14 @@
 																				</xs:element>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor).																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor).
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2188,18 +2329,30 @@
 																	</xs:element>
 																	<xs:element name="ICMS40">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS																				40 - Isenta 																				41 - Não tributada 																				50 - Suspensão																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS
+																				40 - Isenta 
+																				41 - Não tributada 
+																				50 - Suspensão
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributação pelo ICMS 																										40 - Isenta 																										41 - Não tributada 																										50 - Suspensão 																										51 - Diferimento																						</xs:documentation>
+																						<xs:documentation>Tributação pelo ICMS 
+																										40 - Isenta 
+																										41 - Não tributada 
+																										50 - Suspensão 
+																										51 - Diferimento
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2218,7 +2371,20 @@
 																					</xs:element>
 																					<xs:element name="motDesICMS">
 																						<xs:annotation>
-																							<xs:documentation>Este campo será preenchido quando o campo anterior estiver preenchido.																								Informar o motivo da desoneração:																								1 – Táxi;																								3 – Produtor Agropecuário;																								4 – Frotista/Locadora;																								5 – Diplomático/Consular;																								6 – Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);																								7 – SUFRAMA;																								8 - Venda a órgão Público;																								9 – Outros																								10- Deficiente Condutor																								11- Deficiente não condutor																								16 - Olimpíadas Rio 2016																							</xs:documentation>
+																							<xs:documentation>Este campo será preenchido quando o campo anterior estiver preenchido.
+																								Informar o motivo da desoneração:
+																								1 – Táxi;
+																								3 – Produtor Agropecuário;
+																								4 – Frotista/Locadora;
+																								5 – Diplomático/Consular;
+																								6 – Utilitários e Motocicletas da Amazônia Ocidental e Áreas de Livre Comércio (Resolução 714/88 e 790/94 – CONTRAN e suas alterações);
+																								7 – SUFRAMA;
+																								8 - Venda a órgão Público;
+																								9 – Outros
+																								10- Deficiente Condutor
+																								11- Deficiente não condutor
+																								16 - Olimpíadas Rio 2016
+																							</xs:documentation>
 																						</xs:annotation>
 																						<xs:simpleType>
 																							<xs:restriction base="xs:string">
@@ -2243,18 +2409,26 @@
 																	</xs:element>
 																	<xs:element name="ICMS51">
 																		<xs:annotation>
-																			<xs:documentation>Tributção pelo ICMS																				51 - Diferimento																				A exigência do preenchimento das informações do ICMS diferido fica à critério de cada UF.																			</xs:documentation>
+																			<xs:documentation>Tributção pelo ICMS
+																				51 - Diferimento
+																				A exigência do preenchimento das informações do ICMS diferido fica à critério de cada UF.
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																											20 - Com redução de base de cálculo																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																											20 - Com redução de base de cálculo
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2265,7 +2439,12 @@
 																				</xs:element>
 																				<xs:element minOccurs="0" name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS:																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS:
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2334,18 +2513,25 @@
 																	</xs:element>
 																	<xs:element name="ICMS60">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS																				60 - ICMS cobrado anteriormente por substituição tributária																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS
+																				60 - ICMS cobrado anteriormente por substituição tributária
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributação pelo ICMS 																							60 - ICMS cobrado anteriormente por substituição tributária																						</xs:documentation>
+																						<xs:documentation>Tributação pelo ICMS 
+																							60 - ICMS cobrado anteriormente por substituição tributária
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2396,18 +2582,25 @@
 																	</xs:element>
 																	<xs:element name="ICMS70">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS 																				70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS 
+																				70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																							70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																							70 - Com redução de base de cálculo e cobrança do ICMS por substituição tributária
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2418,7 +2611,12 @@
 																				</xs:element>
 																				<xs:element name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS:																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS:
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2469,7 +2667,14 @@
 																				</xs:sequence>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor).																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor).
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2553,18 +2758,25 @@
 																	</xs:element>
 																	<xs:element name="ICMS90">
 																		<xs:annotation>
-																			<xs:documentation>Tributação pelo ICMS																				90 - Outras																			</xs:documentation>
+																			<xs:documentation>Tributação pelo ICMS
+																				90 - Outras
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																							90 - Outras																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																							90 - Outras
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2576,7 +2788,12 @@
 																				<xs:sequence minOccurs="0">
 																					<xs:element name="modBC">
 																						<xs:annotation>
-																							<xs:documentation>Modalidade de determinação da BC do ICMS: 																								0 - Margem Valor Agregado (%);																								1 - Pauta (valor);																								2 - Preço Tabelado Máximo (valor);																								3 - Valor da Operação.																							</xs:documentation>
+																							<xs:documentation>Modalidade de determinação da BC do ICMS: 
+																								0 - Margem Valor Agregado (%);
+																								1 - Pauta (valor);
+																								2 - Preço Tabelado Máximo (valor);
+																								3 - Valor da Operação.
+																							</xs:documentation>
 																						</xs:annotation>
 																						<xs:simpleType>
 																							<xs:restriction base="xs:string">
@@ -2629,7 +2846,14 @@
 																				<xs:sequence minOccurs="0">
 																					<xs:element name="modBCST">
 																						<xs:annotation>
-																							<xs:documentation>Modalidade de determinação da BC do ICMS ST:																								0 – Preço tabelado ou máximo  sugerido;																								1 - Lista Negativa (valor);																								2 - Lista Positiva (valor);																								3 - Lista Neutra (valor);																								4 - Margem Valor Agregado (%);																								5 - Pauta (valor).																							</xs:documentation>
+																							<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																								0 – Preço tabelado ou máximo  sugerido;
+																								1 - Lista Negativa (valor);
+																								2 - Lista Positiva (valor);
+																								3 - Lista Neutra (valor);
+																								4 - Margem Valor Agregado (%);
+																								5 - Pauta (valor).
+																							</xs:documentation>
 																						</xs:annotation>
 																						<xs:simpleType>
 																							<xs:restriction base="xs:string">
@@ -2714,18 +2938,27 @@
 																	</xs:element>
 																	<xs:element name="ICMSPart">
 																		<xs:annotation>
-																			<xs:documentation>Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação																								Operação interestadual para consumidor final com partilha do ICMS  devido na operação entre a UF de origem e a UF do destinatário ou ou a UF definida na legislação. 																								(Ex. UF da concessionária de entrega do  veículos)																			</xs:documentation>
+																			<xs:documentation>Partilha do ICMS entre a UF de origem e UF de destino ou a UF definida na legislação
+																								Operação interestadual para consumidor final com partilha do ICMS  devido na operação entre a UF de origem e a UF do destinatário ou ou a UF definida na legislação. 
+																								(Ex. UF da concessionária de entrega do  veículos)
+																			</xs:documentation>
 																		</xs:annotation>
 																		<xs:complexType>
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributação pelo ICMS 																							10 - Tributada e com cobrança do ICMS por substituição tributária;																							90 – Outros.																						</xs:documentation>
+																						<xs:documentation>Tributação pelo ICMS 
+																							10 - Tributada e com cobrança do ICMS por substituição tributária;
+																							90 – Outros.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2737,7 +2970,12 @@
 																				</xs:element>
 																				<xs:element name="modBC">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS: 																							0 - Margem Valor Agregado (%);																							1 - Pauta (valor);																							2 - Preço Tabelado Máximo (valor);																							3 - Valor da Operação.																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS: 
+																							0 - Margem Valor Agregado (%);
+																							1 - Pauta (valor);
+																							2 - Preço Tabelado Máximo (valor);
+																							3 - Valor da Operação.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2771,7 +3009,14 @@
 																				</xs:element>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor).																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor).
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2831,12 +3076,18 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CST">
 																					<xs:annotation>
-																						<xs:documentation>Tributção pelo ICMS																							41-Não Tributado.																							60-Cobrado anteriormente por substituição tributária.																						</xs:documentation>
+																						<xs:documentation>Tributção pelo ICMS
+																							41-Não Tributado.
+																							60-Cobrado anteriormente por substituição tributária.
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2877,7 +3128,11 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno 																							(v2.0)																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno 
+																							(v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
@@ -2912,12 +3167,20 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno 																							(v2.0)																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno 
+																							(v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
 																					<xs:annotation>
-																						<xs:documentation>102- Tributada pelo Simples Nacional sem permissão de crédito. 																							103 – Isenção do ICMS  no Simples Nacional para faixa de receita bruta.																							300 – Imune.																							400 – Não tributda pelo Simples Nacional (v.2.0) (v.2.0)																						</xs:documentation>
+																						<xs:documentation>102- Tributada pelo Simples Nacional sem permissão de crédito. 
+																							103 – Isenção do ICMS  no Simples Nacional para faixa de receita bruta.
+																							300 – Imune.
+																							400 – Não tributda pelo Simples Nacional (v.2.0) (v.2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -2940,7 +3203,11 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>Origem da mercadoria:																							0 – Nacional;																							1 – Estrangeira – Importação direta;																							2 – Estrangeira – Adquirida no mercado interno. (v2.0)																						</xs:documentation>
+																						<xs:documentation>Origem da mercadoria:
+																							0 – Nacional;
+																							1 – Estrangeira – Importação direta;
+																							2 – Estrangeira – Adquirida no mercado interno. (v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
@@ -2956,7 +3223,14 @@
 																				</xs:element>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor). (v2.0)																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor). (v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -3033,12 +3307,18 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>Origem da mercadoria:																							0 – Nacional;																							1 – Estrangeira – Importação direta;																							2 – Estrangeira – Adquirida no mercado interno. (v2.0)																						</xs:documentation>
+																						<xs:documentation>Origem da mercadoria:
+																							0 – Nacional;
+																							1 – Estrangeira – Importação direta;
+																							2 – Estrangeira – Adquirida no mercado interno. (v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
 																					<xs:annotation>
-																						<xs:documentation>202- Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por Substituição Tributária;																											203-  Isenção do ICMS nos Simples Nacional para faixa de receita bruta e com cobrança do ICMS por Substituição Tributária (v.2.0)																						</xs:documentation>
+																						<xs:documentation>202- Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do ICMS por Substituição Tributária;
+																											203-  Isenção do ICMS nos Simples Nacional para faixa de receita bruta e com cobrança do ICMS por Substituição Tributária (v.2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -3050,7 +3330,14 @@
 																				</xs:element>
 																				<xs:element name="modBCST">
 																					<xs:annotation>
-																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:																							0 – Preço tabelado ou máximo  sugerido;																							1 - Lista Negativa (valor);																							2 - Lista Positiva (valor);																							3 - Lista Neutra (valor);																							4 - Margem Valor Agregado (%);																							5 - Pauta (valor). (v2.0)																						</xs:documentation>
+																						<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																							0 – Preço tabelado ou máximo  sugerido;
+																							1 - Lista Negativa (valor);
+																							2 - Lista Positiva (valor);
+																							3 - Lista Neutra (valor);
+																							4 - Margem Valor Agregado (%);
+																							5 - Pauta (valor). (v2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -3117,12 +3404,17 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
 																					<xs:annotation>
-																						<xs:documentation>500 – ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação																							(v.2.0)																						</xs:documentation>
+																						<xs:documentation>500 – ICMS cobrado anterirmente por substituição tributária (substituído) ou por antecipação
+																							(v.2.0)
+																						</xs:documentation>
 																					</xs:annotation>
 																					<xs:simpleType>
 																						<xs:restriction base="xs:string">
@@ -3176,7 +3468,10 @@
 																			<xs:sequence>
 																				<xs:element name="orig" type="Torig">
 																					<xs:annotation>
-																						<xs:documentation>origem da mercadoria: 0 - Nacional 																							1 - Estrangeira - Importação direta 																							2 - Estrangeira - Adquirida no mercado interno																						</xs:documentation>
+																						<xs:documentation>origem da mercadoria: 0 - Nacional 
+																							1 - Estrangeira - Importação direta 
+																							2 - Estrangeira - Adquirida no mercado interno
+																						</xs:documentation>
 																					</xs:annotation>
 																				</xs:element>
 																				<xs:element name="CSOSN">
@@ -3193,7 +3488,12 @@
 																				<xs:sequence minOccurs="0">
 																					<xs:element name="modBC">
 																						<xs:annotation>
-																							<xs:documentation>Modalidade de determinação da BC do ICMS: 																								0 - Margem Valor Agregado (%);																								1 - Pauta (valor);																								2 - Preço Tabelado Máximo (valor);																								3 - Valor da Operação.																							</xs:documentation>
+																							<xs:documentation>Modalidade de determinação da BC do ICMS: 
+																								0 - Margem Valor Agregado (%);
+																								1 - Pauta (valor);
+																								2 - Preço Tabelado Máximo (valor);
+																								3 - Valor da Operação.
+																							</xs:documentation>
 																						</xs:annotation>
 																						<xs:simpleType>
 																							<xs:restriction base="xs:string">
@@ -3229,7 +3529,14 @@
 																				<xs:sequence minOccurs="0">
 																					<xs:element name="modBCST">
 																						<xs:annotation>
-																							<xs:documentation>Modalidade de determinação da BC do ICMS ST:																								0 – Preço tabelado ou máximo  sugerido;																								1 - Lista Negativa (valor);																								2 - Lista Positiva (valor);																								3 - Lista Neutra (valor);																								4 - Margem Valor Agregado (%);																								5 - Pauta (valor).																							</xs:documentation>
+																							<xs:documentation>Modalidade de determinação da BC do ICMS ST:
+																								0 – Preço tabelado ou máximo  sugerido;
+																								1 - Lista Negativa (valor);
+																								2 - Lista Positiva (valor);
+																								3 - Lista Neutra (valor);
+																								4 - Margem Valor Agregado (%);
+																								5 - Pauta (valor).
+																							</xs:documentation>
 																						</xs:annotation>
 																						<xs:simpleType>
 																							<xs:restriction base="xs:string">
@@ -3475,13 +3782,19 @@
 														<xs:choice>
 															<xs:element name="PISAliq">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do PIS. 																						01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);																						02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do PIS.
+ 																						01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+																						02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
+																</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do PIS.																									01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);																									02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do PIS.
+																									01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+																									02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3511,13 +3824,17 @@
 															</xs:element>
 															<xs:element name="PISQtde">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do PIS.																		03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do PIS.
+																		03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do PIS.																					03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do PIS.
+																					03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3546,13 +3863,26 @@
 															</xs:element>
 															<xs:element name="PISNT">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do PIS.																		04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);																		06 - Operação Tributável - Alíquota Zero;																		07 - Operação Isenta da contribuição;																		08 - Operação Sem Incidência da contribuição;																		09 - Operação com suspensão da contribuição;																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do PIS.
+																		04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+																		06 - Operação Tributável - Alíquota Zero;
+																		07 - Operação Isenta da contribuição;
+																		08 - Operação Sem Incidência da contribuição;
+																		09 - Operação com suspensão da contribuição;
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do PIS.																					04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);																					05 - Operação Tributável (ST);																					06 - Operação Tributável - Alíquota Zero;																					07 - Operação Isenta da contribuição;																					08 - Operação Sem Incidência da contribuição;																					09 - Operação com suspensão da contribuição;																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do PIS.
+																					04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+																					05 - Operação Tributável (ST);
+																					06 - Operação Tributável - Alíquota Zero;
+																					07 - Operação Isenta da contribuição;
+																					08 - Operação Sem Incidência da contribuição;
+																					09 - Operação com suspensão da contribuição;
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3571,13 +3901,17 @@
 															</xs:element>
 															<xs:element name="PISOutr">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do PIS.																						99 - Outras Operações.																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do PIS.
+																						99 - Outras Operações.
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do PIS.																									99 - Outras Operações.																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do PIS.
+																									99 - Outras Operações.
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3694,13 +4028,19 @@
 														<xs:choice>
 															<xs:element name="COFINSAliq">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do COFINS. 01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);																		02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do COFINS.
+																		01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+																		02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do COFINS.																					01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);																					02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do COFINS.
+																					01 – Operação Tributável - Base de Cálculo = Valor da Operação Alíquota Normal (Cumulativo/Não Cumulativo);
+																					02 - Operação Tributável - Base de Calculo = Valor da Operação (Alíquota Diferenciada);
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3730,13 +4070,17 @@
 															</xs:element>
 															<xs:element name="COFINSQtde">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do COFINS.																		03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do COFINS.
+																		03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do COFINS.																					03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do COFINS.
+																					03 - Operação Tributável - Base de Calculo = Quantidade Vendida x Alíquota por Unidade de Produto;
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3764,13 +4108,26 @@
 															</xs:element>
 															<xs:element name="COFINSNT">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do COFINS:																		04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);																		06 - Operação Tributável - Alíquota Zero;																		07 - Operação Isenta da contribuição;																		08 - Operação Sem Incidência da contribuição;																		09 - Operação com suspensão da contribuição;																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do COFINS:
+																		04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+																		06 - Operação Tributável - Alíquota Zero;
+																		07 - Operação Isenta da contribuição;
+																		08 - Operação Sem Incidência da contribuição;
+																		09 - Operação com suspensão da contribuição;
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do COFINS:																					04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);																					05 - Operação Tributável (ST);																					06 - Operação Tributável - Alíquota Zero;																					07 - Operação Isenta da contribuição;																					08 - Operação Sem Incidência da contribuição;																					09 - Operação com suspensão da contribuição;																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do COFINS:
+																					04 - Operação Tributável - Tributação Monofásica - (Alíquota Zero);
+																					05 - Operação Tributável (ST);
+																					06 - Operação Tributável - Alíquota Zero;
+																					07 - Operação Isenta da contribuição;
+																					08 - Operação Sem Incidência da contribuição;
+																					09 - Operação com suspensão da contribuição;
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -3789,13 +4146,63 @@
 															</xs:element>
 															<xs:element name="COFINSOutr">
 																<xs:annotation>
-																	<xs:documentation>Código de Situação Tributária do COFINS:																			49 - Outras Operações de Saída																			50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno																			51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno																			52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação																			53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno																			54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação																			55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação																			56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação																			60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno																			61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno																			62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação																			63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno																			64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação																			65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação																			66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação																			67 - Crédito Presumido - Outras Operações																			70 - Operação de Aquisição sem Direito a Crédito																			71 - Operação de Aquisição com Isenção																			72 - Operação de Aquisição com Suspensão																			73 - Operação de Aquisição a Alíquota Zero																			74 - Operação de Aquisição sem Incidência da Contribuição																			75 - Operação de Aquisição por Substituição Tributária																			98 - Outras Operações de Entrada																			99 - Outras Operações.																	</xs:documentation>
+																	<xs:documentation>Código de Situação Tributária do COFINS:
+																			49 - Outras Operações de Saída
+																			50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno
+																			51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno
+																			52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação
+																			53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno
+																			54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação
+																			55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação
+																			56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação
+																			60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno
+																			61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno
+																			62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação
+																			63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno
+																			64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação
+																			65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação
+																			66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação
+																			67 - Crédito Presumido - Outras Operações
+																			70 - Operação de Aquisição sem Direito a Crédito
+																			71 - Operação de Aquisição com Isenção
+																			72 - Operação de Aquisição com Suspensão
+																			73 - Operação de Aquisição a Alíquota Zero
+																			74 - Operação de Aquisição sem Incidência da Contribuição
+																			75 - Operação de Aquisição por Substituição Tributária
+																			98 - Outras Operações de Entrada
+																			99 - Outras Operações.
+																	</xs:documentation>
 																</xs:annotation>
 																<xs:complexType>
 																	<xs:sequence>
 																		<xs:element name="CST">
 																			<xs:annotation>
-																				<xs:documentation>Código de Situação Tributária do COFINS:																					49 - Outras Operações de Saída																					50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno																					51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno																					52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação																					53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno																					54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação																					55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação																					56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação																					60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno																					61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno																					62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação																					63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno																					64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação																					65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação																					66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação																					67 - Crédito Presumido - Outras Operações																					70 - Operação de Aquisição sem Direito a Crédito																					71 - Operação de Aquisição com Isenção																					72 - Operação de Aquisição com Suspensão																					73 - Operação de Aquisição a Alíquota Zero																					74 - Operação de Aquisição sem Incidência da Contribuição																					75 - Operação de Aquisição por Substituição Tributária																					98 - Outras Operações de Entrada																					99 - Outras Operações.																				</xs:documentation>
+																				<xs:documentation>Código de Situação Tributária do COFINS:
+																					49 - Outras Operações de Saída
+																					50 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita Tributada no Mercado Interno
+																					51 - Operação com Direito a Crédito – Vinculada Exclusivamente a Receita Não Tributada no Mercado Interno
+																					52 - Operação com Direito a Crédito - Vinculada Exclusivamente a Receita de Exportação
+																					53 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno
+																					54 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas no Mercado Interno e de Exportação
+																					55 - Operação com Direito a Crédito - Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação
+																					56 - Operação com Direito a Crédito - Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação
+																					60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno
+																					61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno
+																					62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação
+																					63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno
+																					64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação
+																					65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação
+																					66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno, e de Exportação
+																					67 - Crédito Presumido - Outras Operações
+																					70 - Operação de Aquisição sem Direito a Crédito
+																					71 - Operação de Aquisição com Isenção
+																					72 - Operação de Aquisição com Suspensão
+																					73 - Operação de Aquisição a Alíquota Zero
+																					74 - Operação de Aquisição sem Incidência da Contribuição
+																					75 - Operação de Aquisição por Substituição Tributária
+																					98 - Outras Operações de Entrada
+																					99 - Outras Operações.
+																				</xs:documentation>
 																			</xs:annotation>
 																			<xs:simpleType>
 																				<xs:restriction base="xs:string">
@@ -4284,7 +4691,14 @@
 								<xs:sequence>
 									<xs:element name="modFrete">
 										<xs:annotation>
-											<xs:documentation>Modalidade do frete												0- Contratação do Frete por conta do Remetente (CIF);												1- Contratação do Frete por conta do destinatário/remetente (FOB);												2- Contratação do Frete por conta de terceiros;												3- Transporte próprio por conta do remetente;												4- Transporte próprio por conta do destinatário;												9- Sem Ocorrência de transporte.											</xs:documentation>
+											<xs:documentation>Modalidade do frete
+												0- Contratação do Frete por conta do Remetente (CIF);
+												1- Contratação do Frete por conta do destinatário/remetente (FOB);
+												2- Contratação do Frete por conta de terceiros;
+												3- Transporte próprio por conta do remetente;
+												4- Transporte próprio por conta do destinatário;
+												9- Sem Ocorrência de transporte.
+											</xs:documentation>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="xs:string">
@@ -4647,7 +5061,9 @@
 														<xs:sequence>
 															<xs:element name="tpIntegra">
 																<xs:annotation>
-																	<xs:documentation>Tipo de Integração do processo de pagamento com o sistema de automação da empresa/ 1=Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF , Comercio Eletronico 2=Pagamento não integrado com o sistema de automação da empresa Ex: equipamento POS</xs:documentation>
+																	<xs:documentation>Tipo de Integração do processo de pagamento com o sistema de automação da empresa/ 
+																1=Pagamento integrado com o sistema de automação da empresa Ex. equipamento TEF , Comercio Eletronico
+																2=Pagamento não integrado com o sistema de automação da empresa Ex: equipamento POS</xs:documentation>
 																</xs:annotation>
 																<xs:simpleType>
 																	<xs:restriction base="xs:string">
@@ -4737,7 +5153,10 @@
 									</xs:element>
 									<xs:element maxOccurs="10" minOccurs="0" name="obsCont">
 										<xs:annotation>
-											<xs:documentation>Campo de uso livre do contribuinte												informar o nome do campo no atributo xCampo												e o conteúdo do campo no xTexto											</xs:documentation>
+											<xs:documentation>Campo de uso livre do contribuinte
+												informar o nome do campo no atributo xCampo
+												e o conteúdo do campo no xTexto
+											</xs:documentation>
 										</xs:annotation>
 										<xs:complexType>
 											<xs:sequence>
@@ -4762,7 +5181,10 @@
 									</xs:element>
 									<xs:element maxOccurs="10" minOccurs="0" name="obsFisco">
 										<xs:annotation>
-											<xs:documentation>Campo de uso exclusivo do Fisco												informar o nome do campo no atributo xCampo												e o conteúdo do campo no xTexto											</xs:documentation>
+											<xs:documentation>Campo de uso exclusivo do Fisco
+												informar o nome do campo no atributo xCampo
+												e o conteúdo do campo no xTexto
+											</xs:documentation>
 										</xs:annotation>
 										<xs:complexType>
 											<xs:sequence>
@@ -4804,7 +5226,13 @@
 												</xs:element>
 												<xs:element name="indProc">
 													<xs:annotation>
-														<xs:documentation>Origem do processo, informar com:															0 - SEFAZ;															1 - Justiça Federal;															2 - Justiça Estadual;															3 - Secex/RFB;															9 - Outros														</xs:documentation>
+														<xs:documentation>Origem do processo, informar com:
+															0 - SEFAZ;
+															1 - Justiça Federal;
+															2 - Justiça Estadual;
+															3 - Secex/RFB;
+															9 - Outros
+														</xs:documentation>
 													</xs:annotation>
 													<xs:simpleType>
 														<xs:restriction base="xs:string">
@@ -5087,7 +5515,10 @@
 					<xs:sequence>
 						<xs:element name="tpAmb" type="TAmb">
 							<xs:annotation>
-								<xs:documentation>Identificação do Ambiente:									1 - Produção									2 - Homologação								</xs:documentation>
+								<xs:documentation>Identificação do Ambiente:
+									1 - Produção
+									2 - Homologação
+								</xs:documentation>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="verAplic" type="TVerAplic">
@@ -5162,7 +5593,10 @@
 		<xs:sequence>
 			<xs:element name="tpAmb" type="TAmb">
 				<xs:annotation>
-					<xs:documentation>Identificação do Ambiente:						1 - Produção						2 - Homologação					</xs:documentation>
+					<xs:documentation>Identificação do Ambiente:
+						1 - Produção
+						2 - Homologação
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="verAplic" type="TVerAplic">
@@ -5226,7 +5660,10 @@
 		<xs:sequence>
 			<xs:element name="tpAmb" type="TAmb">
 				<xs:annotation>
-					<xs:documentation>Identificação do Ambiente:						1 - Produção						2 - Homologação					</xs:documentation>
+					<xs:documentation>Identificação do Ambiente:
+						1 - Produção
+						2 - Homologação
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="nRec" type="TRec">
@@ -5244,7 +5681,10 @@
 		<xs:sequence>
 			<xs:element name="tpAmb" type="TAmb">
 				<xs:annotation>
-					<xs:documentation>Identificação do Ambiente:										1 - Produção										2 - Homologação					</xs:documentation>
+					<xs:documentation>Identificação do Ambiente:
+										1 - Produção
+										2 - Homologação
+					</xs:documentation>
 				</xs:annotation>
 			</xs:element>
 			<xs:element name="verAplic" type="TVerAplic">
@@ -5670,7 +6110,9 @@
 	</xs:complexType>
 	<xs:simpleType name="Torig">
 		<xs:annotation>
-			<xs:documentation>Tipo Origem da mercadoria CST ICMS  origem da mercadoria: 0-Nacional exceto as indicadas nos códigos 3, 4, 5 e 8;								1-Estrangeira - Importação direta; 2-Estrangeira - Adquirida no mercado interno; 3-Nacional, conteudo superior 40% e inferior ou igual a 70%; 4-Nacional, processos produtivos básicos; 5-Nacional, conteudo inferior 40%; 6-Estrangeira - Importação direta, com similar nacional, lista CAMEX; 7-Estrangeira - mercado interno, sem simular,lista CAMEX;8-Nacional, Conteúdo de Importação superior a 70%.			</xs:documentation>
+			<xs:documentation>Tipo Origem da mercadoria CST ICMS  origem da mercadoria: 0-Nacional exceto as indicadas nos códigos 3, 4, 5 e 8;
+								1-Estrangeira - Importação direta; 2-Estrangeira - Adquirida no mercado interno; 3-Nacional, conteudo superior 40% e inferior ou igual a 70%; 4-Nacional, processos produtivos básicos; 5-Nacional, conteudo inferior 40%; 6-Estrangeira - Importação direta, com similar nacional, lista CAMEX; 7-Estrangeira - mercado interno, sem simular,lista CAMEX;8-Nacional, Conteúdo de Importação superior a 70%.
+			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
@@ -5997,7 +6439,12 @@
 						<xs:sequence>
 							<xs:element name="CST">
 								<xs:annotation>
-									<xs:documentation>Código da Situação Tributária do IPI:										00-Entrada com recuperação de crédito										49 - Outras entradas										50-Saída tributada										99-Outras saídas									</xs:documentation>
+									<xs:documentation>Código da Situação Tributária do IPI:
+										00-Entrada com recuperação de crédito
+										49 - Outras entradas
+										50-Saída tributada
+										99-Outras saídas
+									</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
@@ -6048,7 +6495,18 @@
 						<xs:sequence>
 							<xs:element name="CST">
 								<xs:annotation>
-									<xs:documentation>Código da Situação Tributária do IPI:														01-Entrada tributada com alíquota zero														02-Entrada isenta														03-Entrada não-tributada														04-Entrada imune														05-Entrada com suspensão														51-Saída tributada com alíquota zero														52-Saída isenta														53-Saída não-tributada														54-Saída imune														55-Saída com suspensão									</xs:documentation>
+									<xs:documentation>Código da Situação Tributária do IPI:
+														01-Entrada tributada com alíquota zero
+														02-Entrada isenta
+														03-Entrada não-tributada
+														04-Entrada imune
+														05-Entrada com suspensão
+														51-Saída tributada com alíquota zero
+														52-Saída isenta
+														53-Saída não-tributada
+														54-Saída imune
+														55-Saída com suspensão
+									</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
