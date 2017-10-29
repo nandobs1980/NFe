@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory name="">
+  <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+  <property name="hibernate.connection.password">B3ll3p0qu3#1</property>
+  <property name="hibernate.connection.url">jdbc:sqlserver://ssouzadev.cnghcmxcq3nb.sa-east-1.rds.amazonaws.com:1433;databaseName=nfe_dev1</property>
+  <property name="hibernate.connection.username">ssouza</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hbm2ddl.auto">update</property>
+  <mapping class="br.com.ssouzasolucoesfiscais.model.Arquivo"/>
+ </session-factory>
+</hibernate-configuration>

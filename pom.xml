@@ -26,5 +26,15 @@
     	<artifactId>mssql-jdbc</artifactId>
     	<version>6.2.2.jre8</version>
     </dependency>
+    <dependency>
+    	<groupId>org.hibernate</groupId>
+    	<artifactId>hibernate-core</artifactId>
+    	<version>5.2.12.Final</version>
+    </dependency>
+    <dependency>
+    <groupId>org.jvnet.hyperjaxb3</groupId>
+    <artifactId>hyperjaxb3-ejb-runtime</artifactId>
+    <version>0.6.2</version>
+	</dependency>
   </dependencies>
 </project>
