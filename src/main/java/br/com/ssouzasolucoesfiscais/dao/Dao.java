@@ -10,30 +10,29 @@ import javax.persistence.criteria.Root;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
-import br.com.ssouzasolucoesfiscais.model.ModeloBase;
 import br.com.ssouzasolucoesfiscais.util.HibernateUtil;
 
-public class Dao <T extends ModeloBase>{
+public class Dao <T>{
 
 	private Session session = HibernateUtil.getSessionFactory().openSession();
 	 
 	public T procurarPorId(Class<T> clazz, Long id){
 		return this.session.find(clazz, id);
 	}
-	 
-	public void adicionarOuAtualizar(T obj){
-		
+	
+	public void adicionar(T obj) {
 		this.session.beginTransaction();
-		if(obj.getId() == null){
-			this.session.save(obj);
-		}else{
-			this.session.update(obj);
-		}
-        this.session.getTransaction().commit();
+		this.session.save(obj);
+		this.session.getTransaction().commit();
+	}
+	
+	public void atualizarAtualizar(T obj){
+		this.session.beginTransaction();		
+		this.session.update(obj);
+		this.session.getTransaction().commit();
 	}
 	
 	public void apagar(T obj) {
-		
 		this.session.beginTransaction();
 		this.session.remove(obj);
 		this.session.getTransaction().commit();
@@ -41,8 +40,6 @@ public class Dao <T extends ModeloBase>{
 	
 	
 	public List<T> listarTodos(Class<T> clazz) {
-		
-		
 		
 		//Get Criteria Builder
         CriteriaBuilder builder = this.session.getCriteriaBuilder();
@@ -53,7 +50,6 @@ public class Dao <T extends ModeloBase>{
         query.select(root);
         Query<T> q = this.session.createQuery(query);
         List<T> list = q.getResultList();
-
 
         return list;
 	}

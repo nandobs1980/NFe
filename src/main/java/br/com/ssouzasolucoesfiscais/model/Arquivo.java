@@ -1,7 +1,7 @@
 package br.com.ssouzasolucoesfiscais.model;
 
 import java.io.IOException;
-import java.io.Serializable;
+//import java.io.Serializable;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -19,12 +19,12 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="Tnfe_Arquivo")
-public class Arquivo implements ModeloBase, Serializable {
+public class Arquivo  {
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	//private static final long serialVersionUID = 1L;
 	@Id
 	@Column (name="id_Arquivo")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
