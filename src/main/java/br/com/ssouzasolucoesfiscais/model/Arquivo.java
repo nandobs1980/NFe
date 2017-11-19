@@ -35,6 +35,18 @@ public class Arquivo  {
 	private String pathXML;
 	@Column
 	private String fileNameXML;
+	@Column (nullable=false)
+	private String id_nfe;
+	
+	public String getId_nfe() {
+		return id_nfe;
+	}
+
+	public void setId_nfe(String id_nfe) {
+		this.id_nfe = id_nfe;
+	}
+
+
 	@Column
 	private String creationTime;
 	@Column
@@ -51,15 +63,16 @@ public class Arquivo  {
 		
 	}
 
-	public Arquivo(byte id_Empresa, String pathXML, String fileNameXML) throws IOException {
+	public Arquivo(byte id_Empresa, String arqXML, String id_Nfe) throws IOException {
 		
-		Path pFile = Paths.get(pathXML + fileNameXML);
+		Path pFile = Paths.get(arqXML);
 		BasicFileAttributes attr = Files.readAttributes(pFile, BasicFileAttributes.class);
 		Date now = new Date();
 		
-		this.pathXML = pathXML;
-		this.fileNameXML = fileNameXML;
+		this.pathXML = pFile.getParent().toString();
+		this.fileNameXML = pFile.getFileName().toString();
 		this.setId_Empresa(id_Empresa);
+		this.id_nfe = id_Nfe;
 		
 		this.creationTime = attr.creationTime().toString();
         this.lastAccessTime = attr.lastAccessTime().toString();
