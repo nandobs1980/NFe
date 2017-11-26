@@ -1,9 +1,11 @@
 package br.com.ssouzasolucoesfiscais.NFe;
 
+import java.io.File;
 import java.util.Scanner;
 
 import br.com.ssouzasolucoesfiscais.dao.Dao;
 import br.com.ssouzasolucoesfiscais.model.Arquivo;
+import br.com.ssouzasolucoesfiscais.util.AwsUtil;
 import br.com.ssouzasolucoesfiscais.util.NFeUtil;
 import br.com.ssouzasolucoesfiscais.util.XMLUtil;
 import br.inf.portalfiscal.nfe.TNfeProc;
@@ -62,6 +64,12 @@ public class InputTest {
 		System.out.println("Persistindo em Banco de dados...");
 		nfeDao.adicionar(tNfe);
 		System.out.println("NFe gravado com sucesso.");
+		
+		System.out.println("Uploading file...");
+		AwsUtil s3 = new AwsUtil();
+		File arq = new File(arqXML);
+		s3.S3Upload(arq, "ssouza-dev", "nandobs");
+		System.out.println("Fim");
 	}
 	
 }

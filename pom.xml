@@ -16,25 +16,30 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      	<groupId>junit</groupId>
+      	<artifactId>junit</artifactId>
+      	<version>3.8.1</version>
+		<scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>com.microsoft.sqlserver</groupId>
-    	<artifactId>mssql-jdbc</artifactId>
-    	<version>6.2.2.jre8</version>
+    		<groupId>com.microsoft.sqlserver</groupId>
+    		<artifactId>mssql-jdbc</artifactId>
+    		<version>6.2.2.jre8</version>
     </dependency>
     <dependency>
-    	<groupId>org.hibernate</groupId>
-    	<artifactId>hibernate-core</artifactId>
-    	<version>5.2.12.Final</version>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-core</artifactId>
+    		<version>5.2.12.Final</version>
     </dependency>
-    <dependency>
-    <groupId>org.jvnet.hyperjaxb3</groupId>
-    <artifactId>hyperjaxb3-ejb-runtime</artifactId>
-    <version>0.6.2</version>
+    	<dependency>
+    		<groupId>org.jvnet.hyperjaxb3</groupId>
+    		<artifactId>hyperjaxb3-ejb-runtime</artifactId>
+    		<version>0.6.2</version>
 	</dependency>
+	<dependency>
+		<groupId>com.amazonaws</groupId>
+    		<artifactId>aws-java-sdk-s3</artifactId>
+    		<version>1.11.235</version>
+		</dependency>
   </dependencies>
 </project>
